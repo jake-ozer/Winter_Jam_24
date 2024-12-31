@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     private Rigidbody2D rb;
+    private Vector2 movement;
 
     private void Start()
     {
@@ -14,8 +15,11 @@ public class PlayerMovement : MonoBehaviour
     {
         float xdir = Input.GetAxisRaw("Horizontal");
         float ydir = Input.GetAxisRaw("Vertical");
-        Vector2 movement = new Vector2(xdir, ydir);
+        movement = new Vector2(xdir, ydir);
+    }
+
+    private void FixedUpdate()
+    {
         rb.linearVelocity = movement * speed * Time.deltaTime;
-        
     }
 }
