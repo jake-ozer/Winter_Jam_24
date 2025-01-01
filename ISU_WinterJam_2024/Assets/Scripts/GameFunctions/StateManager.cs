@@ -5,6 +5,7 @@ public class StateManager : MonoBehaviour
     private GameObject player;
     private GameState curState;
     public GameObject dialogueCanvas;
+    private PlayerAnim playerAnim;
 
     public enum GameState
     {
@@ -15,6 +16,7 @@ public class StateManager : MonoBehaviour
     private void Start()
     {
         player = FindFirstObjectByType<PlayerMovement>().gameObject;
+        playerAnim = FindFirstObjectByType<PlayerAnim>();
         curState = GameState.roam;
     }
 
@@ -25,11 +27,13 @@ public class StateManager : MonoBehaviour
             case GameState.roam:
                 player.GetComponent<PlayerMovement>().enabled = true;
                 dialogueCanvas.SetActive(false);
+                playerAnim.enabled = true;
                 break;
             case GameState.dialogue:
                 player.GetComponent<PlayerMovement>().enabled = false;
                 player.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
                 dialogueCanvas.SetActive(true);
+                playerAnim.enabled = false;
                 break;
         }
     }

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86811d4a46ea2a74fad325ca8aad367b, type: 3}
+  m_Name: test4
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 95b0cef5-f423-4d06-bf1e-696e1ac47ddc
+    PortName: Next
+    TargetNodeGuid: 1a239078-a228-4757-a1d4-ccd7c7012c79
+  - BaseNodeGuid: 1a239078-a228-4757-a1d4-ccd7c7012c79
+    PortName: I dont know. I need milk please.
+    TargetNodeGuid: 55da18f6-49a9-462b-b75a-d525da1ace5a
+  - BaseNodeGuid: 1a239078-a228-4757-a1d4-ccd7c7012c79
+    PortName: HEHEHE. Nothing.
+    TargetNodeGuid: d33299ec-22dd-4edc-9ca1-b165271c845c
+  DialogueNodeData:
+  - Guid: 55da18f6-49a9-462b-b75a-d525da1ace5a
+    DialogueText: go to the store
+    eventID: 
+    Position: {x: 647.2, y: 224}
+  - Guid: d33299ec-22dd-4edc-9ca1-b165271c845c
+    DialogueText: weirdo
+    eventID: 
+    Position: {x: 607.2, y: 367.2}
+  - Guid: 1a239078-a228-4757-a1d4-ccd7c7012c79
+    DialogueText: What is going on dude???
+    eventID: take_money
+    Position: {x: 253.6, y: 200}

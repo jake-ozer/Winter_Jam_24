@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86811d4a46ea2a74fad325ca8aad367b, type: 3}
+  m_Name: bobear
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 7da2353d-6fec-4052-80a0-22d12655dc37
+    PortName: doggy
+    TargetNodeGuid: 8b692ad2-48ef-443f-b3fd-f9c106f1569d
+  - BaseNodeGuid: b3385bd1-5def-40f0-9cc0-292d2b8eda6d
+    PortName: Next
+    TargetNodeGuid: 7da2353d-6fec-4052-80a0-22d12655dc37
+  DialogueNodeData:
+  - Guid: 7da2353d-6fec-4052-80a0-22d12655dc37
+    DialogueText: Dialogue Node
+    Position: {x: 373.6, y: 176}
+  - Guid: 8b692ad2-48ef-443f-b3fd-f9c106f1569d
+    DialogueText: Dialogue Node
+    Position: {x: 658.4, y: 176}
