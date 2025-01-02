@@ -49,7 +49,12 @@ public class DialogueGraph : EditorWindow
 
         var nodeCreateButton = new Button(() =>
         {
-            g_View.CreateNode("Dialogue Node");
+            var mousePosition = Event.current.mousePosition;
+            var localMousePosition = g_View.contentViewContainer.WorldToLocal(mousePosition);
+            var newNode = g_View.CreateDialogueNode("Dialogue Node");
+            newNode.SetPosition(new Rect(localMousePosition, g_View.defaultNodeSize));
+
+            g_View.AddElement(newNode);
         });
         nodeCreateButton.text = "Create Node";
         toolbar.Add(nodeCreateButton);

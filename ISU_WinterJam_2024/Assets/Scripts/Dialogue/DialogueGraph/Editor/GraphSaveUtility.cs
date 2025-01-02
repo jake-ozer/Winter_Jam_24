@@ -36,13 +36,14 @@ public class GraphSaveUtility
             var outputNode = connectedPorts[i].output.node as DialogueNode;
             var inputNode = connectedPorts[i].input.node as DialogueNode;
 
-            dialogueContainer.NodeLinks.Add(new NodeLinkData
+            var nld = new NodeLinkData
             {
                 BaseNodeGuid = outputNode.GUID,
                 PortName = connectedPorts[i].output.portName,
-                TargetNodeGuid = inputNode.GUID
-            });
-               
+                TargetNodeGuid = inputNode.GUID,
+            };
+
+            dialogueContainer.NodeLinks.Add(nld);
         }
 
         foreach(var dialogueNode in Nodes.Where(node => !node.entryPoint))
@@ -52,8 +53,21 @@ public class GraphSaveUtility
                 Guid = dialogueNode.GUID,
                 DialogueText = dialogueNode.dialogueText,
                 Position = dialogueNode.GetPosition().position,
-                eventID = dialogueNode.eventID
+                eventID = dialogueNode.eventID,
+                ChoicePreReqIDs = dialogueNode.choicePreReqIDs
             });
+
+
+            foreach (var port in dialogueContainer.NodeLinks)
+            {
+                if (string.IsNullOrEmpty(port.PreReqID))
+                {
+                    if (dialogueNode.choicePreReqIDs.ContainsKey(port.PortName))
+                    {
+                        port.PreReqID = dialogueNode.choicePreReqIDs[port.PortName];
+                    }
+                }
+            }
         }
 
         //auto creates resource folder if it doesnt exist
@@ -104,13 +118,24 @@ public class GraphSaveUtility
     {
         foreach(var nodeData in _containerCache.DialogueNodeData)
         {
-            var tempNode = _targetGraphView.CreateDialogueNode(nodeData.DialogueText);
+            var tempNode = _targetGraphView.CreateDialogueNode(nodeData.DialogueText, nodeData.eventID);
             tempNode.GUID = nodeData.Guid;
-            tempNode.eventID = nodeData.eventID;
             _targetGraphView.AddElement(tempNode);
 
-            var nodePorts = _containerCache.NodeLinks.Where(x=>x.BaseNodeGuid == nodeData.Guid).ToList();
-            nodePorts.ForEach(x => _targetGraphView.AddChoicePort(tempNode, x.PortName)); 
+            var nodePorts = _containerCache.NodeLinks.Where(x=>x.BaseNodeGuid == nodeData.Guid).ToList(); 
+
+            foreach(var nodePort in nodePorts)
+            {
+                if(nodeData.ChoicePreReqIDs.ContainsKey(nodePort.PortName))
+                {
+                    _targetGraphView.AddChoicePort(tempNode, nodePort.PortName, nodeData.ChoicePreReqIDs[nodePort.PortName]);
+                }
+                else
+                {
+                    _targetGraphView.AddChoicePort(tempNode, nodePort.PortName);
+                }
+                
+            }
         }
     }
 

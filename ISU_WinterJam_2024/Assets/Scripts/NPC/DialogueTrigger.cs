@@ -16,7 +16,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             //flip sprite to correct side
             gfxObj.transform.rotation = player.transform.position.x < gfxObj.transform.position.x ? Quaternion.Euler(0, 0, 0) : Quaternion.Euler(0, 180, 0);
-            GetComponent<Dialogue>().TriggerDialogue();
+            GetComponent<NPC_Dialogue>().TriggerDialogue();
         }
     }
 }

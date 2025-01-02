@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerAnim : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
 
     private float lastHorizMove = 0f;
     private float lastVertMove = 0f; 
@@ -20,6 +20,11 @@ public class PlayerAnim : MonoBehaviour
         {
             lastHorizMove = dir.x;
             lastVertMove = dir.y;
+            anim.SetBool("moving", true);
+        }
+        else
+        {
+            anim.SetBool("moving", false);
         }
 
         anim.SetFloat("HorizMove", lastHorizMove);

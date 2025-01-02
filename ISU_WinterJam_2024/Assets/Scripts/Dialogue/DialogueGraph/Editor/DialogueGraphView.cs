@@ -73,13 +73,14 @@ public class DialogueGraphView : GraphView
         AddElement(CreateDialogueNode(nodeName));
     }
 
-    public DialogueNode CreateDialogueNode(string nodeName)
+    public DialogueNode CreateDialogueNode(string nodeName, string eventID="")
     {
         var dialogueNode = new DialogueNode
         {
-            title = nodeName,
+            title = nodeName.Length > 24 ? nodeName.Substring(0, 24) + "..." : nodeName,
             dialogueText = nodeName,
-            GUID = Guid.NewGuid().ToString()
+            GUID = Guid.NewGuid().ToString(),
+            eventID = eventID
         };
 
         var inputPort = GeneratePort(dialogueNode, Direction.Input, Port.Capacity.Multi);
@@ -90,21 +91,30 @@ public class DialogueGraphView : GraphView
         button.text = "New Choice";
         dialogueNode.titleContainer.Add(button);
 
-        var textField = new TextField(string.Empty);
+        var textField = new TextField("NPC Dialogue")
+        {
+            multiline = true
+        };
+        textField.style.whiteSpace = WhiteSpace.Normal; 
+        textField.style.width = 290; 
         textField.RegisterValueChangedCallback(evt =>
         {
             dialogueNode.dialogueText = evt.newValue;
             dialogueNode.title = evt.newValue;
         });
-        textField.SetValueWithoutNotify(dialogueNode.title);
+        textField.SetValueWithoutNotify(dialogueNode.dialogueText);
+
+
         dialogueNode.mainContainer.Add(textField);
 
         //event id field
         var eventIDField = new TextField("Event ID");
+        eventIDField.style.width = 290;
         eventIDField.RegisterValueChangedCallback(evt =>
         {
-            dialogueNode.eventID = evt.newValue; // Assuming 'eventId' is a property on your DialogueNode class
+            dialogueNode.eventID = evt.newValue; 
         });
+        eventIDField.SetValueWithoutNotify(dialogueNode.eventID);
         dialogueNode.mainContainer.Add(eventIDField);
 
 
@@ -115,7 +125,7 @@ public class DialogueGraphView : GraphView
         return dialogueNode;
     }
 
-    public void AddChoicePort(DialogueNode node, string overriddenPortName = "")
+    public void AddChoicePort(DialogueNode node, string overriddenPortName = "", string overriddenPreReqID = "")
     {
         var generatedPort = GeneratePort(node, Direction.Output, Port.Capacity.Single);
 
@@ -135,11 +145,27 @@ public class DialogueGraphView : GraphView
         textField.RegisterValueChangedCallback(evt=>generatedPort.portName = evt.newValue);
         generatedPort.contentContainer.Add(new Label("  "));
         generatedPort.contentContainer.Add(textField);
+
         var deleteButton = new Button(() => RemovePort(node, generatedPort))
         {
             text = "X"
         };
         generatedPort.contentContainer.Add(deleteButton);
+
+        //have a field for preReqID
+        var preReqIDField = new TextField
+        {
+            name = "preReqID",
+            value = overriddenPreReqID
+        };
+        preReqIDField.RegisterValueChangedCallback(evt =>
+        {
+            node.choicePreReqIDs[choicePortName] = evt.newValue; //store preReqID in the node
+            //Debug.Log($"PreReqID for {choicePortName} updated to: {evt.newValue}");
+        });
+        generatedPort.contentContainer.Add(new Label("  PreReq ID: "));
+        generatedPort.contentContainer.Add(preReqIDField);
+        //----------
 
         generatedPort.portName = choicePortName;
         node.outputContainer.Add(generatedPort);
