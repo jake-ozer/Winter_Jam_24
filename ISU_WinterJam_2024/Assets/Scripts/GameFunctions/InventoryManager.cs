@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
@@ -23,6 +24,7 @@ public class InventoryManager : MonoBehaviour
         itemUI.transform.SetParent(itemsParent.transform);
         itemUI.GetComponent<InventoryItemButton>().item = item;
         itemUI.GetComponent<Image>().sprite = item.icon;
+        inventoryItemGOs.Add(itemUI);
     }
 
     public void RemoveItemFromInventory(string itemName)
@@ -40,5 +42,10 @@ public class InventoryManager : MonoBehaviour
     public void ClearDescription()
     {
         descriptionText.text = "";
+    }
+
+    public bool ItemInInventory(string itemName)
+    {
+        return inventoryItemGOs.Any(x => x.GetComponent<InventoryItemButton>().item.itemName == itemName);
     }
 }

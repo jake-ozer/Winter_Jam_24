@@ -43,17 +43,21 @@ public class DialogueManager : MonoBehaviour
 
     private void LoadDialogueOptions()
     {
-        if (curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID != "pass" && !choosingOption)
+        if (!CheckIfPass(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID) && !choosingOption)
         {
             choosingOption = true;
 
             var compatibleNodeLinks = curDialogueContainer.NodeLinks.Where(x => x.BaseNodeGuid == curNodeGuid).ToList();
             foreach (var link in compatibleNodeLinks)
             {
-                GameObject option = Instantiate(optionPrefab);
-                option.GetComponent<DialogueOption>().AssignNextNodeGuid(link.TargetNodeGuid);
-                option.transform.SetParent(diaogueOptionsParent.transform);
-                option.transform.Find("OptionText").GetComponent<TextMeshProUGUI>().text = link.PortName;
+                //only create option if prereq is met, (or there is no pre-req)
+                if (string.IsNullOrEmpty(link.PreReqID) || FindFirstObjectByType<PrerequisiteManager>().CheckPrerequisite(link.PreReqID))
+                {
+                    GameObject option = Instantiate(optionPrefab);
+                    option.GetComponent<DialogueOption>().AssignNextNodeGuid(link.TargetNodeGuid);
+                    option.transform.SetParent(diaogueOptionsParent.transform);
+                    option.transform.Find("OptionText").GetComponent<TextMeshProUGUI>().text = link.PortName;
+                }
             }
         }
     }
@@ -75,15 +79,18 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    //handle any events that might occur
+                    HandleEvents(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID);
+
                     //if its a pass node, go straight to next one. else, wait for user click input
-                    if(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID == "pass")
+                    if (CheckIfPass(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID))
                     {
                         curNodeGuid = PassToNextNodeGuid(curNodeGuid);
                         StartCoroutine(FeedDialogue(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText));
                     }
 
-                    //temp exit dialogue
-                    if (curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID == "end")
+                    //exit dialogue
+                    if (CheckIfEnd(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID))
                     {
                         curNpc.currentNodeGuid = curNodeGuid;
                         curNodeGuid = "";
@@ -96,6 +103,53 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    //method to parse out comma seperated event IDs and then execute those (ignore pass, end)
+    private void HandleEvents(string IDs)
+    {
+        if (!string.IsNullOrEmpty(IDs))
+        {
+            IDs = IDs.Trim();
+            string[] tokens = IDs.Split(',');
+            foreach (string token in tokens)
+            {
+                if (token.Trim() != "pass" && token.Trim() != "end")
+                {
+                    //handle event
+                    Debug.Log("there is an event to handle: " + token.Trim());
+                }
+            }
+        }
+    }
+
+    //method to check whether a set of comma seperated event IDs has a pass
+    private bool CheckIfPass(string IDs)
+    {
+        string[] tokens = IDs.Split(',');
+        foreach (string token in tokens)
+        {
+            if (token.Trim() == "pass")
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //method to check whether a set of comma seperated event IDs has an end
+    private bool CheckIfEnd(string IDs)
+    {
+        string[] tokens = IDs.Split(',');
+        foreach (string token in tokens)
+        {
+            if (token.Trim() == "end")
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     private string PassToNextNodeGuid(string curGuid)
     {
