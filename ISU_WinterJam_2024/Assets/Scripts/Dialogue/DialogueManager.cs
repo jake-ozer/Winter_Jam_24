@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     private bool choosingOption = false;
     private NPC_Dialogue curNpc;
     public TextMeshProUGUI nameText;
+    private int passEndBufferCount;
 
     private void Start()
     {
@@ -43,7 +44,7 @@ public class DialogueManager : MonoBehaviour
 
     private void LoadDialogueOptions()
     {
-        if (!CheckIfPass(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID) && !choosingOption)
+        if (!CheckIfPass(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID) && !CheckIfEnd(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID) && !choosingOption)
         {
             choosingOption = true;
 
@@ -75,30 +76,45 @@ public class DialogueManager : MonoBehaviour
                     feedingDialogue = false;
                     StopAllCoroutines();
                     dialogueText.text = curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText;
-                    
                 }
                 else
                 {
+                    //if its passEndBuffer, show final dialogue snippet
+                    if (passEndBufferCount > 0)
+                    {
+                        passEndBufferCount--;
+                        if(passEndBufferCount == 1)
+                        {
+                            StartCoroutine(FeedDialogue(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText));
+                        }
+                    }
+
                     //handle any events that might occur
                     HandleEvents(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID);
 
                     //if its a pass node, go straight to next one. else, wait for user click input
                     if (CheckIfPass(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID))
                     {
+                        //check if the next node after this pass is an "end" node
+                        if (IsNextEnd(curNodeGuid))
+                        {
+                            passEndBufferCount = 1;
+                        }
+
                         curNodeGuid = PassToNextNodeGuid(curNodeGuid);
                         StartCoroutine(FeedDialogue(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText));
                     }
 
                     //exit dialogue
-                    if (CheckIfEnd(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID))
+                    if (CheckIfEnd(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).eventID) && passEndBufferCount == 0)
                     {
+                        curNodeGuid = PassToNextNodeGuid(curNodeGuid);
                         curNpc.currentNodeGuid = curNodeGuid;
                         curNodeGuid = "";
                         curDialogueContainer = null;
                         stateManager.ChangeState(StateManager.GameState.roam);
                         return;
                     }
-                    
                 }
             }
         }
@@ -116,7 +132,8 @@ public class DialogueManager : MonoBehaviour
                 if (token.Trim() != "pass" && token.Trim() != "end")
                 {
                     //handle event
-                    Debug.Log("there is an event to handle: " + token.Trim());
+                    //Debug.Log("there is an event to handle: " + token.Trim());
+                    FindFirstObjectByType<GameEventManager>().TriggerEvent(token);
                 }
             }
         }
@@ -150,6 +167,22 @@ public class DialogueManager : MonoBehaviour
         return false;
     }
 
+    //checks if the next node is an "end" node
+    private bool IsNextEnd(string curGuid)
+    {
+        DialogueNodeData curNodeData = curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid);
+        NodeLinkData nld = curDialogueContainer.NodeLinks.Find(x => x.BaseNodeGuid == curGuid);
+        string nextGuid = nld.TargetNodeGuid;
+
+        if(CheckIfEnd(curDialogueContainer.DialogueNodeData.Find(x=>x.Guid == nextGuid).eventID))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     private string PassToNextNodeGuid(string curGuid)
     {

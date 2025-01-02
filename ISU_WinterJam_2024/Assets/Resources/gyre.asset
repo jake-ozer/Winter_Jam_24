@@ -61,13 +61,13 @@ MonoBehaviour:
     PortName: I guess I have no other choice...
     TargetNodeGuid: 9942bb6e-4d4e-453f-9c7f-27771890eaa9
     PreReqID: 
-  - BaseNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
-    PortName: Choice 1
-    TargetNodeGuid: c15eb1ac-36db-4147-b3fa-01e3726a8cf8
-    PreReqID: 
   - BaseNodeGuid: 9942bb6e-4d4e-453f-9c7f-27771890eaa9
     PortName: Choice 1
     TargetNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
+    PreReqID: 
+  - BaseNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
+    PortName: Choice 1
+    TargetNodeGuid: 81625b96-0db3-4452-a247-b04d221cf003
     PreReqID: 
   DialogueNodeData:
   - Guid: 81625b96-0db3-4452-a247-b04d221cf003
@@ -75,54 +75,74 @@ MonoBehaviour:
       here?
     eventID: pass
     Position: {x: 258.40002, y: 181.6}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: b785a04c-79b6-4bf3-b1cc-804c033224ec
     DialogueText: Hm...did you get woken and washed up by that metal monster too?
     eventID: pass
     Position: {x: 653.60004, y: 204.8}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: 25538792-c414-49dd-9f95-751640a9cb32
     DialogueText: It's been giving everyone heaps of trouble lately.
     eventID: pass
     Position: {x: 1057.6, y: 231.2}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: c0a0360f-fe61-4f67-8b72-2157b0a9cddf
     DialogueText: Making loud noises, spilling out this weird black goop that tastes
       funny, and worst of all...
     eventID: pass
     Position: {x: 1489.6, y: 220}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: 87a24b3f-8317-4b00-a260-729518dc6fd6
     DialogueText: It's UGLY!
     eventID: pass
     Position: {x: 1928, y: 300.8}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: c77d1411-7feb-45ea-830e-e524ab24399c
     DialogueText: Someone needs to get rid of that thing, but I fear it's a job for
       more than one person...
     eventID: pass
     Position: {x: 2357.5999, y: 300.8}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: dc4304a3-e5e5-4892-9186-2e10adf76daa
     DialogueText: Say...maybe you could help out.
     eventID: pass
     Position: {x: 2827.2, y: 321.6}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: f82da3b8-539d-46a8-997b-410275142a18
     DialogueText: I'll tell you what. If you can recruit some of the fish around
       here to get rid of the metal monster...
     eventID: pass
     Position: {x: 3232.8, y: 335.2}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: 945eb4d5-f4bc-47f8-8bd7-46c3a85621ea
     DialogueText: you'd be a hero!
     eventID: pass
     Position: {x: 3597.5999, y: 335.2}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: f947d1c5-d163-4d63-8c07-d095e8869409
     DialogueText: What do you say?
     eventID: 
     Position: {x: 4001.5999, y: 335.2}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: 07413e42-5a31-4de4-a4f9-b10e9761b513
     DialogueText: I'll catch you later. Good luck!
-    eventID: pass
+    eventID: end
     Position: {x: 4937.6, y: 319.2}
+    ChoicePreReqIDs:
+      _serializedList: []
   - Guid: 9942bb6e-4d4e-453f-9c7f-27771890eaa9
     DialogueText: I knew you'd be the one for the job!
     eventID: pass
     Position: {x: 4500.8003, y: 319.2}
-  - Guid: c15eb1ac-36db-4147-b3fa-01e3726a8cf8
-    DialogueText: Dialogue Node
-    eventID: end
-    Position: {x: 5322.4004, y: 309.6}
+    ChoicePreReqIDs:
+      _serializedList: []

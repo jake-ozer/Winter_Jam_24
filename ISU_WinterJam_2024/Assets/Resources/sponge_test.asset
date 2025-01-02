@@ -17,6 +17,10 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 9cd080ac-d673-4954-af3e-6e9e774e4d93
     PreReqID: 
+  - BaseNodeGuid: 51e46559-b0d6-4233-a9eb-0eb3d41a4329
+    PortName: Choice 1
+    TargetNodeGuid: 9cd080ac-d673-4954-af3e-6e9e774e4d93
+    PreReqID: 
   - BaseNodeGuid: 9cd080ac-d673-4954-af3e-6e9e774e4d93
     PortName: Hey Pat Rick. Yoo.
     TargetNodeGuid: 49a68670-10ce-4c5c-89f4-e47d27f2c121
@@ -25,13 +29,11 @@ MonoBehaviour:
     PortName: Here is a letter from spongebob (give letter)
     TargetNodeGuid: 51e46559-b0d6-4233-a9eb-0eb3d41a4329
     PreReqID: sponge_letter
+  - BaseNodeGuid: 49a68670-10ce-4c5c-89f4-e47d27f2c121
+    PortName: Choice 1
+    TargetNodeGuid: 9cd080ac-d673-4954-af3e-6e9e774e4d93
+    PreReqID: 
   DialogueNodeData:
-  - Guid: 49a68670-10ce-4c5c-89f4-e47d27f2c121
-    DialogueText: My name is not rick!
-    eventID: end
-    Position: {x: 899.2, y: 108.8}
-    ChoicePreReqIDs:
-      _serializedList: []
   - Guid: 51e46559-b0d6-4233-a9eb-0eb3d41a4329
     DialogueText: Oh, thanks for the letter.
     eventID: take_sponge_letter, end
@@ -46,3 +48,9 @@ MonoBehaviour:
       _serializedList:
       - Key: Here is a letter from spongebob (give letter)
         Value: sponge_letter
+  - Guid: 49a68670-10ce-4c5c-89f4-e47d27f2c121
+    DialogueText: My name is not rick!
+    eventID: end
+    Position: {x: 903.2, y: -3.2000008}
+    ChoicePreReqIDs:
+      _serializedList: []

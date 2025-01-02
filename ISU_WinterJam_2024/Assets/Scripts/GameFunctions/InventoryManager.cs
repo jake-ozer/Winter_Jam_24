@@ -46,6 +46,13 @@ public class InventoryManager : MonoBehaviour
 
     public bool ItemInInventory(string itemName)
     {
-        return inventoryItemGOs.Any(x => x.GetComponent<InventoryItemButton>().item.itemName == itemName);
+        foreach(var item in inventoryItemGOs)
+        {
+            if(item.GetComponent<InventoryItemButton>().item.itemName == itemName)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
