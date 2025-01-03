@@ -73,6 +73,7 @@ public class DialogueManager : MonoBehaviour
 
                 if (feedingDialogue)
                 {
+                    LoadDialogueOptions();
                     feedingDialogue = false;
                     StopAllCoroutines();
                     dialogueText.text = curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText;
@@ -103,6 +104,7 @@ public class DialogueManager : MonoBehaviour
 
                         curNodeGuid = PassToNextNodeGuid(curNodeGuid);
                         StartCoroutine(FeedDialogue(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText));
+                        LoadDialogueOptions();
                     }
 
                     //exit dialogue

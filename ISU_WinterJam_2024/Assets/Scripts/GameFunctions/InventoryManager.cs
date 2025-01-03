@@ -4,6 +4,7 @@ using NUnit.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItemToInventory(InventoryItem item)
     {
+        FindFirstObjectByType<NotificationManager>().ShowNotif(item.itemName + " has been added to your inventory");
         var itemUI = Instantiate(itemPrefab);
         itemUI.transform.SetParent(itemsParent.transform);
         itemUI.GetComponent<InventoryItemButton>().item = item;
@@ -29,6 +31,7 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveItemFromInventory(string itemName)
     {
+        FindFirstObjectByType<NotificationManager>().ShowNotif(itemName + " has been removed from your inventory");
         var itemToDelete = inventoryItemGOs.Find(x => x.GetComponent<InventoryItemButton>().item.itemName == itemName);
         inventoryItemGOs.Remove(itemToDelete);
         Destroy(itemToDelete);
