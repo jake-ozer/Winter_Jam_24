@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86811d4a46ea2a74fad325ca8aad367b, type: 3}
+  m_Name: shelby
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 4072de22-38fe-4612-b34c-79be0eebf77a
+    PortName: Next
+    TargetNodeGuid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
+    PreReqID: 
+  - BaseNodeGuid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
+    PortName: What's wrong?
+    TargetNodeGuid: 962fdfbd-a00c-4d47-b000-ad2f30cbd664
+    PreReqID: 
+  - BaseNodeGuid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
+    PortName: ...
+    TargetNodeGuid: f3d57022-b12f-4ed4-8054-098e3c0d14a2
+    PreReqID: 
+  - BaseNodeGuid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
+    PortName: Shelby? Briny wants to make a painting of you, what do you say?
+    TargetNodeGuid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
+    PreReqID: 
+  - BaseNodeGuid: f3d57022-b12f-4ed4-8054-098e3c0d14a2
+    PortName: Choice 1
+    TargetNodeGuid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
+    PreReqID: 
+  DialogueNodeData:
+  - Guid: 962fdfbd-a00c-4d47-b000-ad2f30cbd664
+    DialogueText: Ha...um...don't tell anyone, but I may have lost their letters...
+    eventID: 
+    Position: {x: 1068.7999, y: -48.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
+    DialogueText: Oh no...this is not good...not good at all...
+    eventID: 
+    Position: {x: 324.80002, y: 113.600006}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f3d57022-b12f-4ed4-8054-098e3c0d14a2
+    DialogueText: Oh! Jeez! Are you trying to give me a heart attack! I didn't even
+      see you there!
+    eventID: pass
+    Position: {x: 1068.7999, y: 176.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
+    DialogueText: A painting? Of me! What for?
+    eventID: 
+    Position: {x: 1037.6, y: 391.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
+    DialogueText: Say, you haven't happened across any letters while you've been
+      wandering around, have you?
+    eventID: 
+    Position: {x: 1451.2, y: 163.2}
+    ChoicePreReqIDs:
+      _serializedList: []

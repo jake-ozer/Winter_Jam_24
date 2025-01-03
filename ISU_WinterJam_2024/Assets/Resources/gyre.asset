@@ -67,7 +67,7 @@ MonoBehaviour:
     PreReqID: 
   - BaseNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
     PortName: Choice 1
-    TargetNodeGuid: 81625b96-0db3-4452-a247-b04d221cf003
+    TargetNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
     PreReqID: 
   DialogueNodeData:
   - Guid: 81625b96-0db3-4452-a247-b04d221cf003
@@ -135,7 +135,7 @@ MonoBehaviour:
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 07413e42-5a31-4de4-a4f9-b10e9761b513
-    DialogueText: I'll catch you later. Good luck!
+    DialogueText: I'll be here if you have questions. Good luck!
     eventID: end
     Position: {x: 4937.6, y: 319.2}
     ChoicePreReqIDs:
@@ -144,5 +144,11 @@ MonoBehaviour:
     DialogueText: I knew you'd be the one for the job!
     eventID: pass
     Position: {x: 4500.8003, y: 319.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    DialogueText: You have questions?
+    eventID: 
+    Position: {x: 5391.2, y: 282.4}
     ChoicePreReqIDs:
       _serializedList: []
