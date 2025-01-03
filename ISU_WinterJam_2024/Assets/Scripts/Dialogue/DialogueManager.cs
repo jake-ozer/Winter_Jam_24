@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     private NPC_Dialogue curNpc;
     public TextMeshProUGUI nameText;
     private int passEndBufferCount;
+    public DynamicDialogueBoxMover ddbm;
 
     private void Start()
     {
@@ -58,6 +59,8 @@ public class DialogueManager : MonoBehaviour
                     option.GetComponent<DialogueOption>().AssignNextNodeGuid(link.TargetNodeGuid);
                     option.transform.SetParent(diaogueOptionsParent.transform);
                     option.transform.Find("OptionText").GetComponent<TextMeshProUGUI>().text = link.PortName;
+                    //FindFirstObjectByType<DynamicDialogueBoxMover>().MoveBoxUpByOneFactor();
+                    ddbm.MoveBoxUpByOneFactor();
                 }
             }
         }
@@ -202,6 +205,8 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < diaogueOptionsParent.transform.childCount; i++)
         {
             Destroy(diaogueOptionsParent.transform.GetChild(i).gameObject);
+            //FindFirstObjectByType<DynamicDialogueBoxMover>().MoveBoxDownByOneFactor();
+            ddbm.MoveBoxDownByOneFactor();
         }
         StartCoroutine(FeedDialogue(curDialogueContainer.DialogueNodeData.Find(x => x.Guid == curNodeGuid).DialogueText));
     }

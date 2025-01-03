@@ -61,11 +61,55 @@ MonoBehaviour:
     PortName: I guess I have no other choice...
     TargetNodeGuid: 9942bb6e-4d4e-453f-9c7f-27771890eaa9
     PreReqID: 
+  - BaseNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
+    PortName: Choice 1
+    TargetNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PreReqID: 
   - BaseNodeGuid: 9942bb6e-4d4e-453f-9c7f-27771890eaa9
     PortName: Choice 1
     TargetNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
     PreReqID: 
-  - BaseNodeGuid: 07413e42-5a31-4de4-a4f9-b10e9761b513
+  - BaseNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PortName: What should I be doing again?
+    TargetNodeGuid: d4e9a8e7-e271-4d50-8c9b-469f8af794c0
+    PreReqID: 
+  - BaseNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PortName: How can I recruit other people to help?
+    TargetNodeGuid: 299050e7-bc45-4821-970f-88c4aa8df0d8
+    PreReqID: 
+  - BaseNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PortName: What even is that thing anyway?
+    TargetNodeGuid: efc61508-a316-44ad-a528-74ec711c10a8
+    PreReqID: 
+  - BaseNodeGuid: d4e9a8e7-e271-4d50-8c9b-469f8af794c0
+    PortName: Choice 1
+    TargetNodeGuid: b8b04345-87c2-48cd-a5c7-c9364197d690
+    PreReqID: 
+  - BaseNodeGuid: 299050e7-bc45-4821-970f-88c4aa8df0d8
+    PortName: Choice 1
+    TargetNodeGuid: 32220f18-d050-4f79-860a-9181c40dd9fc
+    PreReqID: 
+  - BaseNodeGuid: efc61508-a316-44ad-a528-74ec711c10a8
+    PortName: Choice 1
+    TargetNodeGuid: 740b60c8-8d7b-4cc8-a37b-d37aff53eb05
+    PreReqID: 
+  - BaseNodeGuid: 740b60c8-8d7b-4cc8-a37b-d37aff53eb05
+    PortName: Choice 1
+    TargetNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PreReqID: 
+  - BaseNodeGuid: b8b04345-87c2-48cd-a5c7-c9364197d690
+    PortName: Choice 1
+    TargetNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
+    PreReqID: 
+  - BaseNodeGuid: 32220f18-d050-4f79-860a-9181c40dd9fc
+    PortName: Choice 1
+    TargetNodeGuid: 7b65a5c8-ffb7-4725-9d8d-dfc6ade85202
+    PreReqID: 
+  - BaseNodeGuid: 7b65a5c8-ffb7-4725-9d8d-dfc6ade85202
+    PortName: Choice 1
+    TargetNodeGuid: 26f4a4cc-abc0-4fca-8060-e7c19a82cff2
+    PreReqID: 
+  - BaseNodeGuid: 26f4a4cc-abc0-4fca-8060-e7c19a82cff2
     PortName: Choice 1
     TargetNodeGuid: d5d9ab38-b499-496a-8246-6a2c68bc7772
     PreReqID: 
@@ -150,5 +194,57 @@ MonoBehaviour:
     DialogueText: You have questions?
     eventID: 
     Position: {x: 5391.2, y: 282.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: d4e9a8e7-e271-4d50-8c9b-469f8af794c0
+    DialogueText: 'You should go around to each level of the ocean and see if you
+      can recruit any other people to help take down that strange machine. '
+    eventID: pass
+    Position: {x: 5888.8003, y: 236}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 299050e7-bc45-4821-970f-88c4aa8df0d8
+    DialogueText: I'd recommend talking to anyone you can.
+    eventID: pass
+    Position: {x: 5888.8003, y: 480}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: efc61508-a316-44ad-a528-74ec711c10a8
+    DialogueText: No one is really sure...
+    eventID: pass
+    Position: {x: 5857.6, y: 686.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 740b60c8-8d7b-4cc8-a37b-d37aff53eb05
+    DialogueText: Whatever it is, I get a bad feeling just looking at it.
+    eventID: end
+    Position: {x: 6237.6, y: 686.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b8b04345-87c2-48cd-a5c7-c9364197d690
+    DialogueText: There's bound to be some people willing, you just have to try your
+      best and look!
+    eventID: end
+    Position: {x: 6314.4004, y: 236}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 32220f18-d050-4f79-860a-9181c40dd9fc
+    DialogueText: Some people may be willing to help right away if they hate that
+      machine as much as you do!
+    eventID: pass
+    Position: {x: 6267.2, y: 467.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 7b65a5c8-ffb7-4725-9d8d-dfc6ade85202
+    DialogueText: Others might need a bit more convincing.
+    eventID: pass
+    Position: {x: 6667.2, y: 480}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 26f4a4cc-abc0-4fca-8060-e7c19a82cff2
+    DialogueText: Personal favors, shell bribes, or even just clever wordplay are
+      perhaps a few ways that could work for those folk.
+    eventID: end
+    Position: {x: 7065.6, y: 529.6}
     ChoicePreReqIDs:
       _serializedList: []
