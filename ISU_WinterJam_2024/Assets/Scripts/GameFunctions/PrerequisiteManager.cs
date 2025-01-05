@@ -61,6 +61,7 @@ public class PrerequisiteManager : MonoBehaviour
         bool val = FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 1")
             && FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 2")
                 && FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 3");
+
         return val;
     }
 

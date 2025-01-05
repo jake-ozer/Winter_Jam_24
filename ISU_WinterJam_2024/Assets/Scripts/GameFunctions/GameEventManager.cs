@@ -14,7 +14,8 @@ public class GameEventManager : MonoBehaviour
         {
             { "take_sponge_letter", HasSpongeLetter },
             { "award_badge", AwardBadge },
-            { "talked_briny", TalkedBriny }
+            { "talked_briny", TalkedBriny },
+            { "remove_shelby_letters", RemoveShelbyLetters }
         };
     }
 
@@ -42,6 +43,13 @@ public class GameEventManager : MonoBehaviour
     private void TalkedBriny()
     {
         FindFirstObjectByType<PrerequisiteManager>().talkedBriny = true;
+    }
+
+    private void RemoveShelbyLetters()
+    {
+        FindFirstObjectByType<InventoryManager>().RemoveItemFromInventory("Shelby Letter 1");
+        FindFirstObjectByType<InventoryManager>().RemoveItemFromInventory("Shelby Letter 2");
+        FindFirstObjectByType<InventoryManager>().RemoveItemFromInventory("Shelby Letter 3");
     }
 
 }

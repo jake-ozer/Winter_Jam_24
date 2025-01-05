@@ -85,10 +85,6 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
     PreReqID: 
-  - BaseNodeGuid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
-    PortName: Choice 1
-    TargetNodeGuid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
-    PreReqID: 
   - BaseNodeGuid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
     PortName: Choice 1
     TargetNodeGuid: d4e9f04f-7191-4928-a167-8d72672ca799
@@ -172,6 +168,10 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: b30b3667-d6e0-41a2-b05a-830e0578850e
     PreReqID: 
+  - BaseNodeGuid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
+    PortName: Choice 1
+    TargetNodeGuid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
+    PreReqID: 
   DialogueNodeData:
   - Guid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
     DialogueText: Oh no...this is not good...not good at all...
@@ -251,12 +251,6 @@ MonoBehaviour:
     Position: {x: 5263.2, y: -180.8}
     ChoicePreReqIDs:
       _serializedList: []
-  - Guid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
-    DialogueText: Oh! Thank you so much! You really are the best!
-    eventID: pass
-    Position: {x: 5336, y: 0}
-    ChoicePreReqIDs:
-      _serializedList: []
   - Guid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
     DialogueText: I heard that you were going to get rid of the monster that scared
       me...
@@ -283,10 +277,10 @@ MonoBehaviour:
     Position: {x: 4784.8003, y: 72}
     ChoicePreReqIDs:
       _serializedList:
-      - Key: Here they are!
-        Value: shelby_letters
       - Key: Briny wants to make a painting of you, what do you say?
         Value: check_talk_briny
+      - Key: Here they are!
+        Value: shelby_letters
   - Guid: a7848dca-b329-4458-9734-a15d8b2e49dc
     DialogueText: Oh boy! A painting...of me...I'll be on my way then...
     eventID: pass, shelby_painting
@@ -347,5 +341,11 @@ MonoBehaviour:
     DialogueText: Ok!
     eventID: end
     Position: {x: 9791.2, y: -104}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
+    DialogueText: Oh! Thank you so much! You really are the best!
+    eventID: pass, remove_shelby_letters
+    Position: {x: 5336, y: 0}
     ChoicePreReqIDs:
       _serializedList: []

@@ -200,6 +200,10 @@ public class DialogueManager : MonoBehaviour
 
     public void UserPickNextNodeGuid(string guid)
     {
+        //stop feeding dialogue if it is going
+        feedingDialogue = false;
+        StopAllCoroutines();
+
         choosingOption = false;
         curNodeGuid = guid;
         for (int i = 0; i < diaogueOptionsParent.transform.childCount; i++)
