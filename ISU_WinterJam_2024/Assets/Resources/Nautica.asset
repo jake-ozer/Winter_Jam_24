@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86811d4a46ea2a74fad325ca8aad367b, type: 3}
+  m_Name: Nautica
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 8c3fbd91-a78a-4a28-aaab-b27c61746f5f
+    PortName: Next
+    TargetNodeGuid: 02c1fc2c-4f95-485a-999f-0cdd7948b833
+    PreReqID: 
+  - BaseNodeGuid: 02c1fc2c-4f95-485a-999f-0cdd7948b833
+    PortName: Choice 1
+    TargetNodeGuid: 5e771b6f-c828-49b8-8651-60d013ed09d3
+    PreReqID: 
+  - BaseNodeGuid: 5e771b6f-c828-49b8-8651-60d013ed09d3
+    PortName: Sure!
+    TargetNodeGuid: 700fc39b-49a8-49cb-bc6e-d4fc77d31e54
+    PreReqID: 
+  - BaseNodeGuid: 5e771b6f-c828-49b8-8651-60d013ed09d3
+    PortName: I'll get back to you
+    TargetNodeGuid: 9306f6a2-55c7-4c9a-b5e3-886c5a76b989
+    PreReqID: 
+  - BaseNodeGuid: 9306f6a2-55c7-4c9a-b5e3-886c5a76b989
+    PortName: Choice 1
+    TargetNodeGuid: 1fa8afbb-9d93-4842-bb44-e7bf641a7ed9
+    PreReqID: 
+  - BaseNodeGuid: 700fc39b-49a8-49cb-bc6e-d4fc77d31e54
+    PortName: Choice 1
+    TargetNodeGuid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    PreReqID: 
+  - BaseNodeGuid: 1fa8afbb-9d93-4842-bb44-e7bf641a7ed9
+    PortName: Choice 1
+    TargetNodeGuid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    PreReqID: 
+  - BaseNodeGuid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    PortName: It woke me up and washed me all the way up here.
+    TargetNodeGuid: 099715b9-494d-4eb8-a659-0b05ca05ef26
+    PreReqID: 
+  - BaseNodeGuid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    PortName: A stingray told me about it.
+    TargetNodeGuid: 099715b9-494d-4eb8-a659-0b05ca05ef26
+    PreReqID: 
+  - BaseNodeGuid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    PortName: I saw it with my own two eyes! It had big teeth and roared like a sea
+      dragon!
+    TargetNodeGuid: 5224cdb2-0457-427c-bf3c-0759f289fcd9
+    PreReqID: 
+  - BaseNodeGuid: 099715b9-494d-4eb8-a659-0b05ca05ef26
+    PortName: Choice 1
+    TargetNodeGuid: eacec407-3d66-48a5-a4a8-da24597fe08d
+    PreReqID: 
+  - BaseNodeGuid: 5224cdb2-0457-427c-bf3c-0759f289fcd9
+    PortName: Choice 1
+    TargetNodeGuid: 805fb104-f6c5-480b-80f5-b88872c418cd
+    PreReqID: 
+  - BaseNodeGuid: eacec407-3d66-48a5-a4a8-da24597fe08d
+    PortName: I didn't, but it sounds scary from what I've heard.
+    TargetNodeGuid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    PreReqID: 
+  - BaseNodeGuid: eacec407-3d66-48a5-a4a8-da24597fe08d
+    PortName: I haven't seen or heard anything much about it at all.
+    TargetNodeGuid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    PreReqID: 
+  - BaseNodeGuid: eacec407-3d66-48a5-a4a8-da24597fe08d
+    PortName: It had a massive maw! It tried to grab and eat other fish as I narrowly
+      escaped!
+    TargetNodeGuid: c3be4819-09cc-4618-b129-c30851583a52
+    PreReqID: 
+  - BaseNodeGuid: 805fb104-f6c5-480b-80f5-b88872c418cd
+    PortName: I put up a vallant fight, but it bested me! I am only on my way back
+      to finish it off!
+    TargetNodeGuid: c3be4819-09cc-4618-b129-c30851583a52
+    PreReqID: 
+  - BaseNodeGuid: 805fb104-f6c5-480b-80f5-b88872c418cd
+    PortName: I kinda just sat there and looked at it I guess.
+    TargetNodeGuid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    PreReqID: 
+  - BaseNodeGuid: 805fb104-f6c5-480b-80f5-b88872c418cd
+    PortName: I got washed up and taken here before I could face it.
+    TargetNodeGuid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    PreReqID: 
+  - BaseNodeGuid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    PortName: Choice 1
+    TargetNodeGuid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    PreReqID: 
+  - BaseNodeGuid: c3be4819-09cc-4618-b129-c30851583a52
+    PortName: Choice 1
+    TargetNodeGuid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    PreReqID: 
+  - BaseNodeGuid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    PortName: If I get around to it.
+    TargetNodeGuid: f94d7924-f035-46cb-80bb-f1b5db81bbcc
+    PreReqID: 
+  - BaseNodeGuid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    PortName: Of course I will!
+    TargetNodeGuid: f7f30294-94f1-4f11-8126-5daee7a9f394
+    PreReqID: 
+  - BaseNodeGuid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    PortName: I live for REVENGE! I will slay the monster and make sure it never
+      sees these waters again!
+    TargetNodeGuid: 937f53ae-3dd4-4873-8adc-682d5b089548
+    PreReqID: 
+  - BaseNodeGuid: f7f30294-94f1-4f11-8126-5daee7a9f394
+    PortName: Choice 1
+    TargetNodeGuid: 87b63fb0-ac1a-47b8-9380-9fcb0dce0916
+    PreReqID: 
+  - BaseNodeGuid: 937f53ae-3dd4-4873-8adc-682d5b089548
+    PortName: Choice 1
+    TargetNodeGuid: 87b63fb0-ac1a-47b8-9380-9fcb0dce0916
+    PreReqID: 
+  - BaseNodeGuid: 87b63fb0-ac1a-47b8-9380-9fcb0dce0916
+    PortName: Choice 1
+    TargetNodeGuid: e9b68ba4-c180-4905-b74f-574e7a957ebd
+    PreReqID: 
+  - BaseNodeGuid: f94d7924-f035-46cb-80bb-f1b5db81bbcc
+    PortName: Choice 1
+    TargetNodeGuid: e9b68ba4-c180-4905-b74f-574e7a957ebd
+    PreReqID: 
+  - BaseNodeGuid: e9b68ba4-c180-4905-b74f-574e7a957ebd
+    PortName: Choice 1
+    TargetNodeGuid: ce1c0564-e9ac-4efe-b9db-82ecfb7ebcba
+    PreReqID: 
+  - BaseNodeGuid: ce1c0564-e9ac-4efe-b9db-82ecfb7ebcba
+    PortName: Choice 1
+    TargetNodeGuid: 587f024b-2069-4fce-a05d-aea74862e549
+    PreReqID: 
+  - BaseNodeGuid: 587f024b-2069-4fce-a05d-aea74862e549
+    PortName: Choice 1
+    TargetNodeGuid: 02c1fc2c-4f95-485a-999f-0cdd7948b833
+    PreReqID: 
+  DialogueNodeData:
+  - Guid: 700fc39b-49a8-49cb-bc6e-d4fc77d31e54
+    DialogueText: Perfect! I'll be sure to put you on the front page for your troubles!
+    eventID: pass
+    Position: {x: 1442, y: 70}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 5e771b6f-c828-49b8-8651-60d013ed09d3
+    DialogueText: There's been talk of a metal monster lately, mind answering a few
+      questions about it for the morning paper?
+    eventID: 
+    Position: {x: 593.3333, y: 173.33333}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 9306f6a2-55c7-4c9a-b5e3-886c5a76b989
+    DialogueText: Dialogue Node
+    eventID: end
+    Position: {x: 1424.6666, y: 310}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 1fa8afbb-9d93-4842-bb44-e7bf641a7ed9
+    DialogueText: Dialogue Node
+    eventID: enter
+    Position: {x: 1792, y: 290}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: a5e39017-9bc0-438a-beba-da0b4ac6dce9
+    DialogueText: So, how did you first learn about the monster?
+    eventID: 
+    Position: {x: 2185.3333, y: 171.33333}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 5224cdb2-0457-427c-bf3c-0759f289fcd9
+    DialogueText: Wow! I've never heard anything like it!
+    eventID: pass
+    Position: {x: 2893.3333, y: 252.66666}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 099715b9-494d-4eb8-a659-0b05ca05ef26
+    DialogueText: Intriguing...
+    eventID: pass
+    Position: {x: 2893.3333, y: 16}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: c0163b1a-760f-4730-b025-d09fdd5dedf4
+    DialogueText: Hm...alright...okay...
+    eventID: pass
+    Position: {x: 4039.3333, y: -50}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: eacec407-3d66-48a5-a4a8-da24597fe08d
+    DialogueText: Now, did you end up seeing the monster?
+    eventID: 
+    Position: {x: 3265.3333, y: -50}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 805fb104-f6c5-480b-80f5-b88872c418cd
+    DialogueText: What did you do then?
+    eventID: 
+    Position: {x: 3316.6667, y: 324}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: c3be4819-09cc-4618-b129-c30851583a52
+    DialogueText: Incredible! What a feat!
+    eventID: pass
+    Position: {x: 4039.3333, y: 252.66666}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: ce9b0a9d-57c7-4f03-9de3-8dcdec1809e9
+    DialogueText: Last question! There's rumors that you're going to go and destroy
+      the metal monster. Is this true?
+    eventID: 
+    Position: {x: 4438.6665, y: 75.333336}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f7f30294-94f1-4f11-8126-5daee7a9f394
+    DialogueText: Oh well that's just some amazing news!
+    eventID: pass
+    Position: {x: 5263.3335, y: -56}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 937f53ae-3dd4-4873-8adc-682d5b089548
+    DialogueText: Amazing! You really are a hero just like they say!
+    eventID: pass
+    Position: {x: 5278.6665, y: 185.33333}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f94d7924-f035-46cb-80bb-f1b5db81bbcc
+    DialogueText: Hm...not very inspiring...but...
+    eventID: pass
+    Position: {x: 5263.3335, y: -270.6667}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 87b63fb0-ac1a-47b8-9380-9fcb0dce0916
+    DialogueText: Welp, you've inspired me!
+    eventID: pass
+    Position: {x: 5788, y: 110.66667}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: e9b68ba4-c180-4905-b74f-574e7a957ebd
+    DialogueText: If you ever need a bit of help taking that ugly thing down, count
+      me in!
+    eventID: pass
+    Position: {x: 6256.6665, y: 84}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: ce1c0564-e9ac-4efe-b9db-82ecfb7ebcba
+    DialogueText: I may only have the power of the presses on my side, but hey, that's
+      still power, right!
+    eventID: pass
+    Position: {x: 6918.6665, y: 229.33333}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 02c1fc2c-4f95-485a-999f-0cdd7948b833
+    DialogueText: Oh! Hey there! You!
+    eventID: pass
+    Position: {x: 132, y: 369.33334}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 587f024b-2069-4fce-a05d-aea74862e549
+    DialogueText: And look out for your interview in the papers soon!
+    eventID: end
+    Position: {x: 7114.6665, y: 540.6667}
+    ChoicePreReqIDs:
+      _serializedList: []
