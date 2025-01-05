@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8ff93f882a606408f97940905b163d, type: 3}
   m_Name: Spongebob_Letter
   m_EditorClassIdentifier: 
-  icon: {fileID: 7828319231864689594, guid: bbf24eda596fa67488318f082ad409e2, type: 3}
+  icon: {fileID: -425995913362149430, guid: e407c0cc511ce504ebc778872eb192c3, type: 3}
   itemName: Letter From Spongebob
   description: Spongebob wants to give this to Patrick to tell him he loves him.

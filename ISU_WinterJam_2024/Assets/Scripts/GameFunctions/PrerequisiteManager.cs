@@ -8,12 +8,15 @@ public class PrerequisiteManager : MonoBehaviour
 
     private Dictionary<string, Func<bool>> condDictionary;
     private Dictionary<string, bool> hasOccured;
+    public bool talkedBriny = false;
 
     private void Start()
     {
         condDictionary = new Dictionary<string, Func<bool>>
         {
-            { "sponge_letter", HasSpongeLetter }
+            { "sponge_letter", HasSpongeLetter },
+            { "talk_briny", CheckTalkBriny },
+            {"shelby_letters", ShelbyLetters }
         };
 
         hasOccured = new Dictionary<string, bool>();
@@ -46,5 +49,19 @@ public class PrerequisiteManager : MonoBehaviour
         return FindFirstObjectByType<InventoryManager>().ItemInInventory("Letter From Spongebob");
     }
 
+    //checks to see if player has talked to briny
+    private bool CheckTalkBriny()
+    {
+        return talkedBriny;
+    }
+
+    //checks to see if the player has all 3 of shelby's letters in their inventory
+    private bool ShelbyLetters()
+    {
+        bool val = FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 1")
+            && FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 2")
+                && FindFirstObjectByType<InventoryManager>().ItemInInventory("Shelby Letter 3");
+        return val;
+    }
 
 }

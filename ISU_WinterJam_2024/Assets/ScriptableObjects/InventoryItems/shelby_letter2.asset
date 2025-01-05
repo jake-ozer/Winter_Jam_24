@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8ff93f882a606408f97940905b163d, type: 3}
+  m_Name: shelby_letter2
+  m_EditorClassIdentifier: 
+  icon: {fileID: -425995913362149430, guid: e407c0cc511ce504ebc778872eb192c3, type: 3}
+  itemName: Shelby Letter 2
+  description: Shelby must have dropped this when she got scared by the machine.
+    There are 3 total.

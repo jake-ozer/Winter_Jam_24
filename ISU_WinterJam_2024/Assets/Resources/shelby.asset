@@ -28,24 +28,159 @@ MonoBehaviour:
   - BaseNodeGuid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
     PortName: Shelby? Briny wants to make a painting of you, what do you say?
     TargetNodeGuid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
-    PreReqID: 
+    PreReqID: check_talk_briny
   - BaseNodeGuid: f3d57022-b12f-4ed4-8054-098e3c0d14a2
     PortName: Choice 1
     TargetNodeGuid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
     PreReqID: 
+  - BaseNodeGuid: 962fdfbd-a00c-4d47-b000-ad2f30cbd664
+    PortName: What's so special about these letters?
+    TargetNodeGuid: f327cb89-4644-4907-950c-bba3be38957a
+    PreReqID: 
+  - BaseNodeGuid: f327cb89-4644-4907-950c-bba3be38957a
+    PortName: Choice 1
+    TargetNodeGuid: 1fc87479-923a-4207-b9b5-af30851d1418
+    PreReqID: 
+  - BaseNodeGuid: e405656b-dbe8-4f34-b950-4d7e421bb146
+    PortName: Choice 1
+    TargetNodeGuid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
+    PreReqID: 
+  - BaseNodeGuid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
+    PortName: Letters?
+    TargetNodeGuid: f327cb89-4644-4907-950c-bba3be38957a
+    PreReqID: 
+  - BaseNodeGuid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
+    PortName: I haven't.
+    TargetNodeGuid: 4cc56ccf-63d3-44dd-83ca-67bf6124f97c
+    PreReqID: 
+  - BaseNodeGuid: 1fc87479-923a-4207-b9b5-af30851d1418
+    PortName: Choice 1
+    TargetNodeGuid: dbd2daf3-3ee6-406f-b2d1-435a325115e2
+    PreReqID: 
+  - BaseNodeGuid: 4cc56ccf-63d3-44dd-83ca-67bf6124f97c
+    PortName: What do you need?
+    TargetNodeGuid: 1fc87479-923a-4207-b9b5-af30851d1418
+    PreReqID: 
+  - BaseNodeGuid: 4cc56ccf-63d3-44dd-83ca-67bf6124f97c
+    PortName: I suppose...
+    TargetNodeGuid: 1fc87479-923a-4207-b9b5-af30851d1418
+    PreReqID: 
+  - BaseNodeGuid: dbd2daf3-3ee6-406f-b2d1-435a325115e2
+    PortName: Choice 1
+    TargetNodeGuid: 1e3a7286-efb2-4662-9335-bd2ba9672f0f
+    PreReqID: 
+  - BaseNodeGuid: 1e3a7286-efb2-4662-9335-bd2ba9672f0f
+    PortName: I can help you find your letters.
+    TargetNodeGuid: 445942bd-e300-4879-bd4b-e05ad25f3cf1
+    PreReqID: 
+  - BaseNodeGuid: 1e3a7286-efb2-4662-9335-bd2ba9672f0f
+    PortName: I'll keep an eye out for them I guess...
+    TargetNodeGuid: 445942bd-e300-4879-bd4b-e05ad25f3cf1
+    PreReqID: 
+  - BaseNodeGuid: 445942bd-e300-4879-bd4b-e05ad25f3cf1
+    PortName: Choice 1
+    TargetNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PreReqID: 
+  - BaseNodeGuid: 163fb744-7cda-40e3-a42d-7b53488f61cb
+    PortName: Choice 1
+    TargetNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PreReqID: 
+  - BaseNodeGuid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
+    PortName: Choice 1
+    TargetNodeGuid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
+    PreReqID: 
+  - BaseNodeGuid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
+    PortName: Choice 1
+    TargetNodeGuid: d4e9f04f-7191-4928-a167-8d72672ca799
+    PreReqID: 
+  - BaseNodeGuid: d4e9f04f-7191-4928-a167-8d72672ca799
+    PortName: Choice 1
+    TargetNodeGuid: f4131139-7f67-4258-8070-ccc3009f9181
+    PreReqID: 
+  - BaseNodeGuid: f4131139-7f67-4258-8070-ccc3009f9181
+    PortName: Choice 1
+    TargetNodeGuid: ef238f5a-0fbe-4980-af70-ca003700cd45
+    PreReqID: 
+  - BaseNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PortName: No, I'll keep looking.
+    TargetNodeGuid: 163fb744-7cda-40e3-a42d-7b53488f61cb
+    PreReqID: 
+  - BaseNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PortName: Here they are!
+    TargetNodeGuid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
+    PreReqID: shelby_letters
+  - BaseNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PortName: Briny wants to make a painting of you, what do you say?
+    TargetNodeGuid: b957fbfb-39aa-440c-b78f-ab9ab76019c6
+    PreReqID: check_talk_briny
+  - BaseNodeGuid: a7848dca-b329-4458-9734-a15d8b2e49dc
+    PortName: Choice 1
+    TargetNodeGuid: 9df6d9eb-ee55-445d-9e28-daef83485459
+    PreReqID: 
+  - BaseNodeGuid: b957fbfb-39aa-440c-b78f-ab9ab76019c6
+    PortName: Briny wanted to paint a friend and it looks like you're the perfect
+      candidate.
+    TargetNodeGuid: a7848dca-b329-4458-9734-a15d8b2e49dc
+    PreReqID: 
+  - BaseNodeGuid: b957fbfb-39aa-440c-b78f-ab9ab76019c6
+    PortName: Briny thinks you'll be able to inspire her again.
+    TargetNodeGuid: a7848dca-b329-4458-9734-a15d8b2e49dc
+    PreReqID: 
+  - BaseNodeGuid: 9df6d9eb-ee55-445d-9e28-daef83485459
+    PortName: Choice 1
+    TargetNodeGuid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    PreReqID: 
+  - BaseNodeGuid: ef238f5a-0fbe-4980-af70-ca003700cd45
+    PortName: Nope!
+    TargetNodeGuid: 749eb92c-c306-4c4f-a8a1-9323db370d34
+    PreReqID: 
+  - BaseNodeGuid: ef238f5a-0fbe-4980-af70-ca003700cd45
+    PortName: Briny wants to make a painting of you, what do you say?
+    TargetNodeGuid: 66195796-cb88-4250-9052-a2aa95c79f55
+    PreReqID: check_talk_briny
+  - BaseNodeGuid: 749eb92c-c306-4c4f-a8a1-9323db370d34
+    PortName: Choice 1
+    TargetNodeGuid: ef238f5a-0fbe-4980-af70-ca003700cd45
+    PreReqID: 
+  - BaseNodeGuid: 66195796-cb88-4250-9052-a2aa95c79f55
+    PortName: Briny wanted to paint a friend and it looks like you're the perfect
+      candidate.
+    TargetNodeGuid: 8c64c1e3-63ae-4777-bf8c-c675c4430527
+    PreReqID: 
+  - BaseNodeGuid: 66195796-cb88-4250-9052-a2aa95c79f55
+    PortName: Briny thinks you'll be able to inspire her again.
+    TargetNodeGuid: 8c64c1e3-63ae-4777-bf8c-c675c4430527
+    PreReqID: 
+  - BaseNodeGuid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
+    PortName: Briny wanted to paint a friend and it looks like you're the perfect
+      candidate.
+    TargetNodeGuid: e405656b-dbe8-4f34-b950-4d7e421bb146
+    PreReqID: 
+  - BaseNodeGuid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
+    PortName: Briny thinks you'll be able to inspire her again.
+    TargetNodeGuid: e405656b-dbe8-4f34-b950-4d7e421bb146
+    PreReqID: 
+  - BaseNodeGuid: 8c64c1e3-63ae-4777-bf8c-c675c4430527
+    PortName: Choice 1
+    TargetNodeGuid: b30b3667-d6e0-41a2-b05a-830e0578850e
+    PreReqID: 
+  - BaseNodeGuid: b30b3667-d6e0-41a2-b05a-830e0578850e
+    PortName: Nope!
+    TargetNodeGuid: 2e8a6b67-b941-4543-935f-54251ca562a7
+    PreReqID: 
+  - BaseNodeGuid: 2e8a6b67-b941-4543-935f-54251ca562a7
+    PortName: Choice 1
+    TargetNodeGuid: b30b3667-d6e0-41a2-b05a-830e0578850e
+    PreReqID: 
   DialogueNodeData:
-  - Guid: 962fdfbd-a00c-4d47-b000-ad2f30cbd664
-    DialogueText: Ha...um...don't tell anyone, but I may have lost their letters...
-    eventID: 
-    Position: {x: 1068.7999, y: -48.8}
-    ChoicePreReqIDs:
-      _serializedList: []
   - Guid: 96dadde7-d8a3-4f4f-af0e-5398d730f65b
     DialogueText: Oh no...this is not good...not good at all...
     eventID: 
     Position: {x: 324.80002, y: 113.600006}
     ChoicePreReqIDs:
-      _serializedList: []
+      _serializedList:
+      - Key: Shelby? Briny wants to make a painting of you, what do you say?
+        Value: check_talk_briny
   - Guid: f3d57022-b12f-4ed4-8054-098e3c0d14a2
     DialogueText: Oh! Jeez! Are you trying to give me a heart attack! I didn't even
       see you there!
@@ -53,16 +188,164 @@ MonoBehaviour:
     Position: {x: 1068.7999, y: 176.8}
     ChoicePreReqIDs:
       _serializedList: []
-  - Guid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
-    DialogueText: A painting? Of me! What for?
+  - Guid: 962fdfbd-a00c-4d47-b000-ad2f30cbd664
+    DialogueText: Ha...um...don't tell anyone, but I may have lost their letters...
     eventID: 
-    Position: {x: 1037.6, y: 391.2}
+    Position: {x: 1242.3999, y: -172.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f327cb89-4644-4907-950c-bba3be38957a
+    DialogueText: Oh...um...I'm supposed to deliver the mail...it's my job...
+    eventID: pass
+    Position: {x: 2558.4, y: -194.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: e405656b-dbe8-4f34-b950-4d7e421bb146
+    DialogueText: Oh boy! A painting...of me...I'll be on my way then...
+    eventID: pass, shelby_painting
+    Position: {x: 1715.2, y: 369.6}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 24b802b4-10c7-470d-8c43-0e6bfc608c09
     DialogueText: Say, you haven't happened across any letters while you've been
       wandering around, have you?
     eventID: 
-    Position: {x: 1451.2, y: 163.2}
+    Position: {x: 2148.8, y: 168.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 1fc87479-923a-4207-b9b5-af30851d1418
+    DialogueText: I was walking around when a massive earthquake started...
+    eventID: pass
+    Position: {x: 3114.4, y: -68.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 4cc56ccf-63d3-44dd-83ca-67bf6124f97c
+    DialogueText: Oh...uh...then maybe you could help me out if you have a minute...
+    eventID: pass
+    Position: {x: 2656, y: 0.79999924}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: dbd2daf3-3ee6-406f-b2d1-435a325115e2
+    DialogueText: "\u2026and I got so scared that I dropped all of the mail I was
+      supposed to deliver!"
+    eventID: pass
+    Position: {x: 3500.8, y: -68.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 1e3a7286-efb2-4662-9335-bd2ba9672f0f
+    DialogueText: I'm such a coward! And now I'm gonna be fired...
+    eventID: 
+    Position: {x: 3911.2, y: -56}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 445942bd-e300-4879-bd4b-e05ad25f3cf1
+    DialogueText: Oh thank you so much! You're the best! I'll be here once you find
+      them!
+    eventID: end
+    Position: {x: 4450.4004, y: -42.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 163fb744-7cda-40e3-a42d-7b53488f61cb
+    DialogueText: Oh. Ok, please hurry!
+    eventID: end
+    Position: {x: 5263.2, y: -180.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 3481b7e7-4ea7-45d3-be3d-f6c5d5c98491
+    DialogueText: Oh! Thank you so much! You really are the best!
+    eventID: pass
+    Position: {x: 5336, y: 0}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 76b3ef18-a6d4-4ee4-8ab5-0ccce5592483
+    DialogueText: I heard that you were going to get rid of the monster that scared
+      me...
+    eventID: pass
+    Position: {x: 5720, y: -31.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: d4e9f04f-7191-4928-a167-8d72672ca799
+    DialogueText: "\u2026and you know what? Even if I am a coward, I'll still help
+      you get rid of the monster whenever you need me."
+    eventID: pass
+    Position: {x: 6122.4004, y: -42.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f4131139-7f67-4258-8070-ccc3009f9181
+    DialogueText: Thank you...
+    eventID: end, award_badge
+    Position: {x: 6537.6, y: -20.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: aa6b5903-226e-4a95-827e-ffbcdf2dd4ae
+    DialogueText: Have you found the letters yet?
+    eventID: 
+    Position: {x: 4784.8003, y: 72}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Here they are!
+        Value: shelby_letters
+      - Key: Briny wants to make a painting of you, what do you say?
+        Value: check_talk_briny
+  - Guid: a7848dca-b329-4458-9734-a15d8b2e49dc
+    DialogueText: Oh boy! A painting...of me...I'll be on my way then...
+    eventID: pass, shelby_painting
+    Position: {x: 5953.6, y: 262.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b957fbfb-39aa-440c-b78f-ab9ab76019c6
+    DialogueText: A painting? Of me! What for?
+    eventID: 
+    Position: {x: 5260, y: 262.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 9df6d9eb-ee55-445d-9e28-daef83485459
+    DialogueText: ...as soon as I figure out this mail situation...
+    eventID: end
+    Position: {x: 6443.2, y: 262.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: ef238f5a-0fbe-4980-af70-ca003700cd45
+    DialogueText: Thanks for helping earlier. ...Need something?
+    eventID: 
+    Position: {x: 7672.8003, y: -72}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Briny wants to make a painting of you, what do you say?
+        Value: check_talk_briny
+  - Guid: 749eb92c-c306-4c4f-a8a1-9323db370d34
+    DialogueText: Ok!
+    eventID: end
+    Position: {x: 8240, y: 64}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 66195796-cb88-4250-9052-a2aa95c79f55
+    DialogueText: A painting? Of me! What for?
+    eventID: 
+    Position: {x: 8289.601, y: -184}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: a655b72e-b7d5-48e5-a085-ecc8cedc7cfd
+    DialogueText: A painting? Of me! What for?
+    eventID: 
+    Position: {x: 1037.6, y: 415.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 8c64c1e3-63ae-4777-bf8c-c675c4430527
+    DialogueText: Oh boy! A painting...of me...I'll be on my way then!
+    eventID: end, shelby_painting
+    Position: {x: 9006.4, y: -110.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b30b3667-d6e0-41a2-b05a-830e0578850e
+    DialogueText: ...Need Something?
+    eventID: 
+    Position: {x: 9424, y: -131.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 2e8a6b67-b941-4543-935f-54251ca562a7
+    DialogueText: Ok!
+    eventID: end
+    Position: {x: 9791.2, y: -104}
     ChoicePreReqIDs:
       _serializedList: []

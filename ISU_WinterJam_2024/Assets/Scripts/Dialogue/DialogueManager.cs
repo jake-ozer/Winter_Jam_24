@@ -138,7 +138,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     //handle event
                     //Debug.Log("there is an event to handle: " + token.Trim());
-                    FindFirstObjectByType<GameEventManager>().TriggerEvent(token);
+                    FindFirstObjectByType<GameEventManager>().TriggerEvent(token.Trim());
                 }
             }
         }

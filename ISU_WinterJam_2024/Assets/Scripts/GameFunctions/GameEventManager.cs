@@ -12,7 +12,9 @@ public class GameEventManager : MonoBehaviour
     {
         eventDictionary = new Dictionary<string, Action>
         {
-            { "take_sponge_letter", HasSpongeLetter }
+            { "take_sponge_letter", HasSpongeLetter },
+            { "award_badge", AwardBadge },
+            { "talked_briny", TalkedBriny }
         };
     }
 
@@ -23,10 +25,23 @@ public class GameEventManager : MonoBehaviour
         eventDictionary[eventID]();
     }
 
+    //increments badge count by one, furthering progressing in the game
+    private void AwardBadge()
+    {
+        FindFirstObjectByType<NotificationManager>().ShowNotif("A sea dweller has agreed to help take down the machine!");
+        //Debug.Log("badge awarded");
+    }
+
     //removes the letter from spongebob to patrick from the player's inventory
     private void HasSpongeLetter()
     {
         FindFirstObjectByType<PrerequisiteManager>().UpdatePreReq("sponge_letter", true);
         FindFirstObjectByType<InventoryManager>().RemoveItemFromInventory("Letter From Spongebob");
     }
+
+    private void TalkedBriny()
+    {
+        FindFirstObjectByType<PrerequisiteManager>().talkedBriny = true;
+    }
+
 }
