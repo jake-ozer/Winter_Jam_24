@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86811d4a46ea2a74fad325ca8aad367b, type: 3}
+  m_Name: pinchy
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 410e8e6e-2cac-4e90-b20d-d45119f4acfe
+    PortName: Next
+    TargetNodeGuid: 6c9b2d81-44d5-4c99-8b93-1b5f0952ffc1
+    PreReqID: 
+  - BaseNodeGuid: 6c9b2d81-44d5-4c99-8b93-1b5f0952ffc1
+    PortName: What's stupid?
+    TargetNodeGuid: 7eebb5ca-6d0a-47b3-8000-80c204f3224a
+    PreReqID: 
+  - BaseNodeGuid: 6c9b2d81-44d5-4c99-8b93-1b5f0952ffc1
+    PortName: ...
+    TargetNodeGuid: b30823d4-747e-4d70-bff5-68be0d6e4d5c
+    PreReqID: 
+  - BaseNodeGuid: b30823d4-747e-4d70-bff5-68be0d6e4d5c
+    PortName: I know her.
+    TargetNodeGuid: ee1ca417-d53e-40d6-94e8-8a2462ce754d
+    PreReqID: 
+  - BaseNodeGuid: b30823d4-747e-4d70-bff5-68be0d6e4d5c
+    PortName: I don't know Briny.
+    TargetNodeGuid: 6d9ac0a3-f505-4251-950e-dbdd8ce81561
+    PreReqID: 
+  - BaseNodeGuid: 7eebb5ca-6d0a-47b3-8000-80c204f3224a
+    PortName: Choice 1
+    TargetNodeGuid: 4b1483bb-3ef1-44fd-87af-f1988cad4af7
+    PreReqID: 
+  - BaseNodeGuid: 4b1483bb-3ef1-44fd-87af-f1988cad4af7
+    PortName: I know her.
+    TargetNodeGuid: ee1ca417-d53e-40d6-94e8-8a2462ce754d
+    PreReqID: 
+  - BaseNodeGuid: 4b1483bb-3ef1-44fd-87af-f1988cad4af7
+    PortName: I don't know Briny.
+    TargetNodeGuid: 6d9ac0a3-f505-4251-950e-dbdd8ce81561
+    PreReqID: 
+  - BaseNodeGuid: ee1ca417-d53e-40d6-94e8-8a2462ce754d
+    PortName: Make up? What happened?
+    TargetNodeGuid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    PreReqID: 
+  - BaseNodeGuid: ee1ca417-d53e-40d6-94e8-8a2462ce754d
+    PortName: What's so bad about Briny?
+    TargetNodeGuid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    PreReqID: 
+  - BaseNodeGuid: 6d9ac0a3-f505-4251-950e-dbdd8ce81561
+    PortName: Are you not friends anymore?
+    TargetNodeGuid: c60d6e0e-32b0-47f3-9d8c-17d761070bdb
+    PreReqID: 
+  - BaseNodeGuid: 6d9ac0a3-f505-4251-950e-dbdd8ce81561
+    PortName: What's so bad about Briny?
+    TargetNodeGuid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    PreReqID: 
+  - BaseNodeGuid: c60d6e0e-32b0-47f3-9d8c-17d761070bdb
+    PortName: What was your fight about?
+    TargetNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PreReqID: 
+  - BaseNodeGuid: c60d6e0e-32b0-47f3-9d8c-17d761070bdb
+    PortName: Why do you hate her?
+    TargetNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PreReqID: 
+  - BaseNodeGuid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    PortName: What was your fight about?
+    TargetNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PreReqID: 
+  - BaseNodeGuid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    PortName: Why do you hate her?
+    TargetNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PreReqID: 
+  - BaseNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PortName: What doesn't matter?
+    TargetNodeGuid: 669c0b24-abe9-45a8-889b-7df4e8a13fb3
+    PreReqID: 
+  - BaseNodeGuid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    PortName: So why would that make you hate her?
+    TargetNodeGuid: 669c0b24-abe9-45a8-889b-7df4e8a13fb3
+    PreReqID: 
+  - BaseNodeGuid: 669c0b24-abe9-45a8-889b-7df4e8a13fb3
+    PortName: Choice 1
+    TargetNodeGuid: 891a02d7-f087-40ef-b661-a151408bc3a9
+    PreReqID: 
+  - BaseNodeGuid: 891a02d7-f087-40ef-b661-a151408bc3a9
+    PortName: Choice 1
+    TargetNodeGuid: a11f76df-f0bd-4b8a-a24c-678edd463515
+    PreReqID: 
+  - BaseNodeGuid: f7949a15-2c29-4a3b-91de-c27c507fc33a
+    PortName: Choice 1
+    TargetNodeGuid: b2fde995-f53e-46de-9570-b9467e5af365
+    PreReqID: 
+  - BaseNodeGuid: a11f76df-f0bd-4b8a-a24c-678edd463515
+    PortName: Choice 1
+    TargetNodeGuid: f7949a15-2c29-4a3b-91de-c27c507fc33a
+    PreReqID: 
+  - BaseNodeGuid: b2fde995-f53e-46de-9570-b9467e5af365
+    PortName: Choice 1
+    TargetNodeGuid: 9dca0489-9f82-4798-915a-f1e8c58d1fa0
+    PreReqID: 
+  - BaseNodeGuid: 9dca0489-9f82-4798-915a-f1e8c58d1fa0
+    PortName: Don't worry, I'm on it!
+    TargetNodeGuid: b4f0dcda-d46f-45a9-8a56-01818b77e7d8
+    PreReqID: 
+  - BaseNodeGuid: 9dca0489-9f82-4798-915a-f1e8c58d1fa0
+    PortName: I guess I'll see what I can do...
+    TargetNodeGuid: b4f0dcda-d46f-45a9-8a56-01818b77e7d8
+    PreReqID: 
+  - BaseNodeGuid: b4f0dcda-d46f-45a9-8a56-01818b77e7d8
+    PortName: Choice 1
+    TargetNodeGuid: a301205b-d0dc-4965-88dc-66ca8cd9882a
+    PreReqID: 
+  - BaseNodeGuid: a301205b-d0dc-4965-88dc-66ca8cd9882a
+    PortName: Let me get back to you.
+    TargetNodeGuid: d542ae57-5956-4f08-ae4c-3da7695bcb6c
+    PreReqID: 
+  - BaseNodeGuid: a301205b-d0dc-4965-88dc-66ca8cd9882a
+    PortName: Briny will talk to you again.
+    TargetNodeGuid: 09aaee70-b141-4f42-b9c8-f45a9bce813a
+    PreReqID: check_briny_forgive
+  - BaseNodeGuid: d542ae57-5956-4f08-ae4c-3da7695bcb6c
+    PortName: Choice 1
+    TargetNodeGuid: a301205b-d0dc-4965-88dc-66ca8cd9882a
+    PreReqID: 
+  - BaseNodeGuid: 09aaee70-b141-4f42-b9c8-f45a9bce813a
+    PortName: Choice 1
+    TargetNodeGuid: 6e756c10-8364-40cf-a104-462026d43655
+    PreReqID: 
+  - BaseNodeGuid: 6e756c10-8364-40cf-a104-462026d43655
+    PortName: Choice 1
+    TargetNodeGuid: 85d61313-4cdb-404e-bbbb-3bb7dd74c454
+    PreReqID: 
+  - BaseNodeGuid: 85d61313-4cdb-404e-bbbb-3bb7dd74c454
+    PortName: Choice 1
+    TargetNodeGuid: f850b0db-7b9d-4c80-af4b-1375f7765c22
+    PreReqID: 
+  - BaseNodeGuid: f850b0db-7b9d-4c80-af4b-1375f7765c22
+    PortName: Choice 1
+    TargetNodeGuid: 85d61313-4cdb-404e-bbbb-3bb7dd74c454
+    PreReqID: 
+  DialogueNodeData:
+  - Guid: 6c9b2d81-44d5-4c99-8b93-1b5f0952ffc1
+    DialogueText: Grrr...stupid, stupid, stupid!
+    eventID: 
+    Position: {x: 276, y: 156.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b30823d4-747e-4d70-bff5-68be0d6e4d5c
+    DialogueText: Oh! Didn't see you there. You a friend you Briny's?
+    eventID: 
+    Position: {x: 625.60004, y: 276.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 7eebb5ca-6d0a-47b3-8000-80c204f3224a
+    DialogueText: Briny! That's who!
+    eventID: pass
+    Position: {x: 664, y: 44.800003}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 4b1483bb-3ef1-44fd-87af-f1988cad4af7
+    DialogueText: You aren't a friend of her are you?
+    eventID: 
+    Position: {x: 1080.7999, y: 44.800003}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: ee1ca417-d53e-40d6-94e8-8a2462ce754d
+    DialogueText: Ugh, of course you do. Well, look. If she doesn't want to make
+      up, then I don't either!
+    eventID: 
+    Position: {x: 1608.7999, y: 71.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 6d9ac0a3-f505-4251-950e-dbdd8ce81561
+    DialogueText: Ugh, good. she is no good friend of mine.
+    eventID: 
+    Position: {x: 1538.3999, y: 330.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: c60d6e0e-32b0-47f3-9d8c-17d761070bdb
+    DialogueText: ARGH! No, of course not! Never! We got in a fight and now I HATE
+      her!
+    eventID: 
+    Position: {x: 2050.4, y: 330.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 6a502966-f98d-4290-8bc8-8309fb3ab790
+    DialogueText: ARGH! We got in a fight. And now I HATE her!
+    eventID: 
+    Position: {x: 2127.2, y: 44.800003}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 20f592cd-2d91-4175-a889-d8124a5e0f56
+    DialogueText: Ugh...I said her painting wasn't that good. It was good but...ARGH
+      it doesn't matter.
+    eventID: 
+    Position: {x: 2632, y: 157.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 669c0b24-abe9-45a8-889b-7df4e8a13fb3
+    DialogueText: Well...I want to be an artist too. But I'll never be as good as
+      her!
+    eventID: pass
+    Position: {x: 3166.4, y: 144.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 891a02d7-f087-40ef-b661-a151408bc3a9
+    DialogueText: I want to learn from her, but it's just taking too long and I got
+      frustrated...
+    eventID: pass
+    Position: {x: 3560, y: 144.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f7949a15-2c29-4a3b-91de-c27c507fc33a
+    DialogueText: I want to be friends with her, but I think that she hates me now...
+    eventID: pass
+    Position: {x: 4350.4004, y: 123.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: a11f76df-f0bd-4b8a-a24c-678edd463515
+    DialogueText: "\u2026and now I feel bad."
+    eventID: pass
+    Position: {x: 3973.5999, y: 144.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b2fde995-f53e-46de-9570-b9467e5af365
+    DialogueText: "\u2026could you maybe...talk to Briny and see if she wants to
+      talk again?"
+    eventID: pass
+    Position: {x: 4728, y: 123.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 9dca0489-9f82-4798-915a-f1e8c58d1fa0
+    DialogueText: I don't think she'll want to talk to me, so maybe just tell her
+      I want to say sorry and be friends again.
+    eventID: 
+    Position: {x: 5121.6, y: 109.600006}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: b4f0dcda-d46f-45a9-8a56-01818b77e7d8
+    DialogueText: Thank you bud! If she doesn't want to talk, that's okay I guess...
+    eventID: end, talked_pinchy_init
+    Position: {x: 5633.6, y: 109.600006}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: a301205b-d0dc-4965-88dc-66ca8cd9882a
+    DialogueText: What did Briny say? Is she still mad at me?
+    eventID: 
+    Position: {x: 6057.6, y: 109.600006}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Briny will talk to you again.
+        Value: check_briny_forgive
+  - Guid: d542ae57-5956-4f08-ae4c-3da7695bcb6c
+    DialogueText: Oh... she must still be angry then... darn.
+    eventID: end
+    Position: {x: 6540.8003, y: 203.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 09aaee70-b141-4f42-b9c8-f45a9bce813a
+    DialogueText: She will? Thank you! I really owe you one bud!
+    eventID: pass
+    Position: {x: 6498.4004, y: -16}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 6e756c10-8364-40cf-a104-462026d43655
+    DialogueText: Tell you what? If you ever need any help, give me a shout. It's
+      only fair I return the favor!
+    eventID: award_badge, end
+    Position: {x: 6931.2, y: -16}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 85d61313-4cdb-404e-bbbb-3bb7dd74c454
+    DialogueText: Thanks for helping talk to Briny for me.
+    eventID: pass
+    Position: {x: 7317.6, y: -16}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: f850b0db-7b9d-4c80-af4b-1375f7765c22
+    DialogueText: I think we can work things out now.
+    eventID: end
+    Position: {x: 7740.8003, y: 10.400002}
+    ChoicePreReqIDs:
+      _serializedList: []

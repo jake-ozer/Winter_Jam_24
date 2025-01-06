@@ -6,6 +6,7 @@ public class MoneyPickup : MonoBehaviour
 {
     public List<Sprite> possibleSprites;
     public SpriteRenderer gfx;
+    public AudioClip pickupSound;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class MoneyPickup : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerMovement>() != null)
         {
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(pickupSound);
             FindFirstObjectByType<MoneyManager>().AddMoney(1);
             Destroy(gameObject);
         }

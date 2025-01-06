@@ -17,10 +17,6 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGuid: 0f468589-fc96-44c9-8bff-97905f08fae8
     PreReqID: 
-  - BaseNodeGuid: 0f468589-fc96-44c9-8bff-97905f08fae8
-    PortName: Sure!
-    TargetNodeGuid: 4c2590b2-8d16-434d-a1fa-733d2257ec04
-    PreReqID: 
   - BaseNodeGuid: 4c2590b2-8d16-434d-a1fa-733d2257ec04
     PortName: Choice 1
     TargetNodeGuid: e641d54a-b79c-491a-a2f9-247e139c1480
@@ -102,10 +98,6 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
     PreReqID: 
-  - BaseNodeGuid: afaaaa07-eb2a-4ca7-bd73-fc6a9156952d
-    PortName: Choice 1
-    TargetNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
-    PreReqID: 
   - BaseNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
     PortName: I'll go ask.
     TargetNodeGuid: 50d57dd4-217b-41a7-8076-6044167eb944
@@ -113,22 +105,126 @@ MonoBehaviour:
   - BaseNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
     PortName: She'll do it!
     TargetNodeGuid: 4c7eabb3-d520-48b4-9ead-360f84201981
+    PreReqID: check_shelby_painting
+  - BaseNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
+    PortName: Pinchy wants to talk to you. He feels bad about what he said.
+    TargetNodeGuid: 2fb07ce1-8bed-4e4b-9361-500ce0c20cef
+    PreReqID: check_talk_pinchy
+  - BaseNodeGuid: f7c97b4f-881f-443f-944f-e43bdee1533e
+    PortName: Choice 1
+    TargetNodeGuid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    PreReqID: 
+  - BaseNodeGuid: 0f468589-fc96-44c9-8bff-97905f08fae8
+    PortName: Sure!
+    TargetNodeGuid: 4c2590b2-8d16-434d-a1fa-733d2257ec04
+    PreReqID: 
+  - BaseNodeGuid: 0f468589-fc96-44c9-8bff-97905f08fae8
+    PortName: Pinchy wants to talk to you. He feels bad about what he said.
+    TargetNodeGuid: a4c6ac55-b04c-4963-be72-dcb37de9c1d3
+    PreReqID: check_talk_pinchy
+  - BaseNodeGuid: a4c6ac55-b04c-4963-be72-dcb37de9c1d3
+    PortName: He says he didn't mean it. He was just frustrated and wishes he could
+      be as good as you at art.
+    TargetNodeGuid: 7efd2ca5-42d1-4d0e-be0e-0957a9c89390
+    PreReqID: 
+  - BaseNodeGuid: a4c6ac55-b04c-4963-be72-dcb37de9c1d3
+    PortName: It sounds like he cares a lot about you and your friendship. He doesn't
+      want to lose you.
+    TargetNodeGuid: 7efd2ca5-42d1-4d0e-be0e-0957a9c89390
+    PreReqID: 
+  - BaseNodeGuid: 7efd2ca5-42d1-4d0e-be0e-0957a9c89390
+    PortName: Choice 1
+    TargetNodeGuid: 23fc13df-5ab6-41fb-880f-41d89be192ba
+    PreReqID: 
+  - BaseNodeGuid: e648006c-1e4f-45a1-b6b7-99679e2b47f9
+    PortName: Sure!
+    TargetNodeGuid: 4c2590b2-8d16-434d-a1fa-733d2257ec04
     PreReqID: 
   - BaseNodeGuid: 50d57dd4-217b-41a7-8076-6044167eb944
     PortName: Choice 1
     TargetNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
     PreReqID: 
+  - BaseNodeGuid: 2fb07ce1-8bed-4e4b-9361-500ce0c20cef
+    PortName: He says he didn't mean it. He was just frustrated and wishes he could
+      be as good as you at art.
+    TargetNodeGuid: 80467a05-bd22-4b08-a48c-826be12255ce
+    PreReqID: 
+  - BaseNodeGuid: 2fb07ce1-8bed-4e4b-9361-500ce0c20cef
+    PortName: It sounds like he cares a lot about you and your friendship. He doesn't
+      want to lose you.
+    TargetNodeGuid: 80467a05-bd22-4b08-a48c-826be12255ce
+    PreReqID: 
+  - BaseNodeGuid: 80467a05-bd22-4b08-a48c-826be12255ce
+    PortName: Choice 1
+    TargetNodeGuid: 2935ec89-5d26-4158-8170-df2abf6b0cbc
+    PreReqID: 
+  - BaseNodeGuid: fdff9bd4-e8f0-41ae-8c6d-21d4ef7a0e3f
+    PortName: Choice 1
+    TargetNodeGuid: da10f40b-b763-4a55-a300-572d3a71e108
+    PreReqID: 
   - BaseNodeGuid: 4c7eabb3-d520-48b4-9ead-360f84201981
     PortName: Choice 1
     TargetNodeGuid: f7c97b4f-881f-443f-944f-e43bdee1533e
     PreReqID: 
+  - BaseNodeGuid: da10f40b-b763-4a55-a300-572d3a71e108
+    PortName: I'll go ask.
+    TargetNodeGuid: e1e0b8ae-4d88-4b20-bb47-c2a18d8ea076
+    PreReqID: 
+  - BaseNodeGuid: da10f40b-b763-4a55-a300-572d3a71e108
+    PortName: She'll do it!
+    TargetNodeGuid: 4c7eabb3-d520-48b4-9ead-360f84201981
+    PreReqID: check_shelby_painting
+  - BaseNodeGuid: e1e0b8ae-4d88-4b20-bb47-c2a18d8ea076
+    PortName: Choice 1
+    TargetNodeGuid: da10f40b-b763-4a55-a300-572d3a71e108
+    PreReqID: 
+  - BaseNodeGuid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    PortName: Nothing, sorry for bothering you.
+    TargetNodeGuid: e3456ba2-73b5-45ae-92ff-57dd6dcb20b8
+    PreReqID: 
+  - BaseNodeGuid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    PortName: Pinchy wants to talk to you. He feels bad about what he said.
+    TargetNodeGuid: 0669b45d-d868-43d3-9cd6-3eb64f9dcc85
+    PreReqID: check_talk_pinchy
+  - BaseNodeGuid: e3456ba2-73b5-45ae-92ff-57dd6dcb20b8
+    PortName: Choice 1
+    TargetNodeGuid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    PreReqID: 
+  - BaseNodeGuid: 0669b45d-d868-43d3-9cd6-3eb64f9dcc85
+    PortName: He says he didn't mean it. He was just frustrated and wishes he could
+      be as good as you at art.
+    TargetNodeGuid: 1644655f-f3f9-48fd-8fc9-43a8a156361d
+    PreReqID: 
+  - BaseNodeGuid: 0669b45d-d868-43d3-9cd6-3eb64f9dcc85
+    PortName: It sounds like he cares a lot about you and your friendship. He doesn't
+      want to lose you.
+    TargetNodeGuid: 1644655f-f3f9-48fd-8fc9-43a8a156361d
+    PreReqID: 
+  - BaseNodeGuid: 1644655f-f3f9-48fd-8fc9-43a8a156361d
+    PortName: Choice 1
+    TargetNodeGuid: 287d5b47-56a6-46b9-aeb7-9e7f6e875db1
+    PreReqID: 
+  - BaseNodeGuid: 287d5b47-56a6-46b9-aeb7-9e7f6e875db1
+    PortName: Choice 1
+    TargetNodeGuid: ceee3289-8dd4-4abc-a0ad-007f736fca3d
+    PreReqID: 
+  - BaseNodeGuid: ceee3289-8dd4-4abc-a0ad-007f736fca3d
+    PortName: Choice 1
+    TargetNodeGuid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    PreReqID: 
+  - BaseNodeGuid: 2935ec89-5d26-4158-8170-df2abf6b0cbc
+    PortName: Choice 1
+    TargetNodeGuid: fdff9bd4-e8f0-41ae-8c6d-21d4ef7a0e3f
+    PreReqID: 
+  - BaseNodeGuid: afaaaa07-eb2a-4ca7-bd73-fc6a9156952d
+    PortName: Choice 1
+    TargetNodeGuid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
+    PreReqID: 
+  - BaseNodeGuid: 23fc13df-5ab6-41fb-880f-41d89be192ba
+    PortName: pass
+    TargetNodeGuid: e648006c-1e4f-45a1-b6b7-99679e2b47f9
+    PreReqID: 
   DialogueNodeData:
-  - Guid: 0f468589-fc96-44c9-8bff-97905f08fae8
-    DialogueText: Hey there! Come to take a look at some art?
-    eventID: 
-    Position: {x: 256.80002, y: 151.2}
-    ChoicePreReqIDs:
-      _serializedList: []
   - Guid: 4c2590b2-8d16-434d-a1fa-733d2257ec04
     DialogueText: That's what I'm talking about! Come here!
     eventID: pass
@@ -138,19 +234,19 @@ MonoBehaviour:
   - Guid: e641d54a-b79c-491a-a2f9-247e139c1480
     DialogueText: This one is truly a masterpiece! It's a painting of some beautiful
       coral under the sunset.
-    eventID: 
+    eventID: pass
     Position: {x: 1369.6, y: 44.800003}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 5a98f1ce-22f9-43b3-9eb2-c1cff14e13f4
     DialogueText: And this! An incredible rock I painted deep in the kelp forests.
-    eventID: 
+    eventID: pass
     Position: {x: 1760, y: 44.800003}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 4b1cea21-f93a-46a7-ad5c-38a24ea9f322
     DialogueText: You look like you'd enjoy this one...a portrait of my friend Pinchy!
-    eventID: 
+    eventID: pass
     Position: {x: 2140, y: 44.800003}
     ChoicePreReqIDs:
       _serializedList: []
@@ -231,15 +327,8 @@ MonoBehaviour:
       _serializedList: []
   - Guid: 9441fe3f-3e0a-4f1b-ad07-05ca2d7a4700
     DialogueText: Great! I'll be waiting here to hear the news! Thanks!
-    eventID: end
+    eventID: end, talked_briny
     Position: {x: 6133.6, y: -38.4}
-    ChoicePreReqIDs:
-      _serializedList: []
-  - Guid: afaaaa07-eb2a-4ca7-bd73-fc6a9156952d
-    DialogueText: Hm, real full of artistic spirit I see. Well, thanks anyways. I'll
-      be waiting here to hear the news!
-    eventID: end
-    Position: {x: 6174.4004, y: 168.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 0ad275fc-b58b-4ebe-b146-4a598d32d03e
@@ -247,23 +336,145 @@ MonoBehaviour:
     eventID: 
     Position: {x: 6562.4004, y: 112.8}
     ChoicePreReqIDs:
-      _serializedList: []
-  - Guid: 50d57dd4-217b-41a7-8076-6044167eb944
-    DialogueText: Ah, I'll be waiting here then.
-    eventID: end
-    Position: {x: 6905.6, y: 238.4}
-    ChoicePreReqIDs:
-      _serializedList: []
-  - Guid: 4c7eabb3-d520-48b4-9ead-360f84201981
-    DialogueText: You're a lifesaver! I'm already inspired!
-    eventID: pass
-    Position: {x: 6992, y: 31.2}
-    ChoicePreReqIDs:
-      _serializedList: []
+      _serializedList:
+      - Key: Pinchy wants to talk to you. He feels bad about what he said.
+        Value: check_talk_pinchy
+      - Key: She'll do it!
+        Value: check_shelby_painting
   - Guid: f7c97b4f-881f-443f-944f-e43bdee1533e
     DialogueText: If you ever need a bit of inspiration, come my way and I will happily
       provide!
     eventID: end, award_badge
     Position: {x: 7424, y: 44}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 0f468589-fc96-44c9-8bff-97905f08fae8
+    DialogueText: Hey there! Come to take a look at some art?
+    eventID: 
+    Position: {x: 256.80002, y: 151.2}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Pinchy wants to talk to you. He feels bad about what he said.
+        Value: check_talk_pinchy
+  - Guid: a4c6ac55-b04c-4963-be72-dcb37de9c1d3
+    DialogueText: Pinchy...he was really rude to me. You'll have to do better than
+      him feeling bad.
+    eventID: 
+    Position: {x: 916.8, y: 269.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 7efd2ca5-42d1-4d0e-be0e-0957a9c89390
+    DialogueText: ...
+    eventID: pass
+    Position: {x: 1722.3999, y: 284.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: e648006c-1e4f-45a1-b6b7-99679e2b47f9
+    DialogueText: Now, did you want to see some art?
+    eventID: 
+    Position: {x: 2620.8, y: 306.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 50d57dd4-217b-41a7-8076-6044167eb944
+    DialogueText: Ah, I'll be waiting here then.
+    eventID: end
+    Position: {x: 7144.8003, y: 264.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 2fb07ce1-8bed-4e4b-9361-500ce0c20cef
+    DialogueText: Pinchy...he was really rude to me. You'll have to do better than
+      him feeling bad.
+    eventID: 
+    Position: {x: 7016.8003, y: 405.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 80467a05-bd22-4b08-a48c-826be12255ce
+    DialogueText: ...
+    eventID: pass
+    Position: {x: 7812, y: 405.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: fdff9bd4-e8f0-41ae-8c6d-21d4ef7a0e3f
+    DialogueText: Thanks for letting me know.
+    eventID: end
+    Position: {x: 8616.8, y: 365.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 4c7eabb3-d520-48b4-9ead-360f84201981
+    DialogueText: You're a lifesaver! I'm already inspired!
+    eventID: pass
+    Position: {x: 7104, y: -55.2}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: da10f40b-b763-4a55-a300-572d3a71e108
+    DialogueText: Hey! What does Shelby think about me doing a painting?
+    eventID: 
+    Position: {x: 9028.8, y: 405.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: e1e0b8ae-4d88-4b20-bb47-c2a18d8ea076
+    DialogueText: Ah, I'll be waiting here then.
+    eventID: end
+    Position: {x: 9602.4, y: 365.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 1bd52a0a-2d47-40de-ba72-af79cfa8c81f
+    DialogueText: Hey again. What's up?
+    eventID: 
+    Position: {x: 7884, y: 44}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Pinchy wants to talk to you. He feels bad about what he said.
+        Value: check_talk_pinchy
+  - Guid: e3456ba2-73b5-45ae-92ff-57dd6dcb20b8
+    DialogueText: You're ok!
+    eventID: end
+    Position: {x: 8277.601, y: -84.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 0669b45d-d868-43d3-9cd6-3eb64f9dcc85
+    DialogueText: Pinchy...he was really rude to me. You'll have to do better than
+      him feeling bad.
+    eventID: 
+    Position: {x: 8582.4, y: 86.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 1644655f-f3f9-48fd-8fc9-43a8a156361d
+    DialogueText: ...
+    eventID: pass
+    Position: {x: 9378.4, y: 86.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 287d5b47-56a6-46b9-aeb7-9e7f6e875db1
+    DialogueText: If he wants to talk he has a lot more explaining to do, but...
+    eventID: pass
+    Position: {x: 9779.2, y: 86.4}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: ceee3289-8dd4-4abc-a0ad-007f736fca3d
+    DialogueText: I'll talk to him.
+    eventID: end, talked_briny_for_pinchy
+    Position: {x: 10367.2, y: 192.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 2935ec89-5d26-4158-8170-df2abf6b0cbc
+    DialogueText: If he wants to talk he has a lot more explaining to do, but...
+      I'll do it
+    eventID: pass, talked_briny_for_pinchy
+    Position: {x: 8229.601, y: 405.6}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: afaaaa07-eb2a-4ca7-bd73-fc6a9156952d
+    DialogueText: Hm, real full of artistic spirit I see. Well, thanks anyways. I'll
+      be waiting here to hear the news!
+    eventID: end, talked_briny
+    Position: {x: 6174.4004, y: 168.8}
+    ChoicePreReqIDs:
+      _serializedList: []
+  - Guid: 23fc13df-5ab6-41fb-880f-41d89be192ba
+    DialogueText: If he wants to talk he has a lot more explaining to do, but...
+      I'll do it
+    eventID: pass, talked_briny_for_pinchy
+    Position: {x: 2081.5999, y: 306.4}
     ChoicePreReqIDs:
       _serializedList: []

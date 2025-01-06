@@ -15,7 +15,11 @@ public class GameEventManager : MonoBehaviour
             { "take_sponge_letter", HasSpongeLetter },
             { "award_badge", AwardBadge },
             { "talked_briny", TalkedBriny },
-            { "remove_shelby_letters", RemoveShelbyLetters }
+            { "remove_shelby_letters", RemoveShelbyLetters },
+            { "tangle_take_money", TangleTakeMoney },
+            { "shelby_painting", ShelbyPainting },
+            {"talked_briny_for_pinchy", TalkedBrinyForPinchy },
+            {"talked_pinchy_init", TalkedPinchyInit }
         };
     }
 
@@ -30,7 +34,7 @@ public class GameEventManager : MonoBehaviour
     private void AwardBadge()
     {
         FindFirstObjectByType<NotificationManager>().ShowNotif("A sea dweller has agreed to help take down the machine!");
-        //Debug.Log("badge awarded");
+        FindFirstObjectByType<GameManager>().allyCount++;
     }
 
     //removes the letter from spongebob to patrick from the player's inventory
@@ -52,4 +56,23 @@ public class GameEventManager : MonoBehaviour
         FindFirstObjectByType<InventoryManager>().RemoveItemFromInventory("Shelby Letter 3");
     }
 
+    private void TangleTakeMoney()
+    {
+        FindFirstObjectByType<MoneyManager>().RemoveMoney(20);
+    }
+
+    private void ShelbyPainting()
+    {
+        FindFirstObjectByType<PrerequisiteManager>().shelbyPainting = true;
+    }
+
+    private void TalkedBrinyForPinchy()
+    {
+        FindFirstObjectByType<PrerequisiteManager>().brinyForgive = true;
+    }
+
+    private void TalkedPinchyInit()
+    {
+        FindFirstObjectByType<PrerequisiteManager>().talkedPinchy = true;
+    }
 }

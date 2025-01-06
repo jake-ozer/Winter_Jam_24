@@ -49,10 +49,6 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: 2dfd09c5-ce21-49a9-85d8-1f01d56698af
     PreReqID: 
-  - BaseNodeGuid: 7ba36dc3-e91b-41d8-b258-65f7462f122b
-    PortName: Choice 1
-    TargetNodeGuid: b71390fe-367b-41e5-b526-20f0377ab90f
-    PreReqID: 
   - BaseNodeGuid: b71390fe-367b-41e5-b526-20f0377ab90f
     PortName: Choice 1
     TargetNodeGuid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
@@ -61,25 +57,41 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
     PreReqID: 
-  - BaseNodeGuid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
+  - BaseNodeGuid: 7ba36dc3-e91b-41d8-b258-65f7462f122b
+    PortName: Choice 1
+    TargetNodeGuid: b71390fe-367b-41e5-b526-20f0377ab90f
+    PreReqID: 
+  - BaseNodeGuid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
     PortName: What do you need?
     TargetNodeGuid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     PreReqID: 
-  - BaseNodeGuid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
+  - BaseNodeGuid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
     PortName: You're quite...prickly. What could you possibly need help with?
     TargetNodeGuid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     PreReqID: 
-  - BaseNodeGuid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
+  - BaseNodeGuid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
     PortName: What do you need?
     TargetNodeGuid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     PreReqID: 
-  - BaseNodeGuid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
+  - BaseNodeGuid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
     PortName: You're quite...prickly. What could you possibly need help with?
     TargetNodeGuid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     PreReqID: 
   - BaseNodeGuid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     PortName: Choice 1
     TargetNodeGuid: 82b5381c-2edf-49fa-b0f5-e26362eafd44
+    PreReqID: 
+  - BaseNodeGuid: 9d688135-94ef-4c3b-b10c-c9096825ed69
+    PortName: I'm not giving you anything unless you explain a bit more.
+    TargetNodeGuid: bbaf2a2c-c401-4832-aae6-554ac833e79d
+    PreReqID: 
+  - BaseNodeGuid: 9d688135-94ef-4c3b-b10c-c9096825ed69
+    PortName: What for?
+    TargetNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
+    PreReqID: 
+  - BaseNodeGuid: bbaf2a2c-c401-4832-aae6-554ac833e79d
+    PortName: Choice 1
+    TargetNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
     PreReqID: 
   - BaseNodeGuid: 82b5381c-2edf-49fa-b0f5-e26362eafd44
     PortName: You just want money?
@@ -89,20 +101,8 @@ MonoBehaviour:
     PortName: I'm not giving you anything unless you explain a bit more.
     TargetNodeGuid: bbaf2a2c-c401-4832-aae6-554ac833e79d
     PreReqID: 
-  - BaseNodeGuid: 9d688135-94ef-4c3b-b10c-c9096825ed69
-    PortName: I'm not giving you anything unless you explain a bit more.
-    TargetNodeGuid: bbaf2a2c-c401-4832-aae6-554ac833e79d
-    PreReqID: 
-  - BaseNodeGuid: 9d688135-94ef-4c3b-b10c-c9096825ed69
-    PortName: What for?
-    TargetNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
-    PreReqID: 
   - BaseNodeGuid: 82b5381c-2edf-49fa-b0f5-e26362eafd44
     PortName: What for?
-    TargetNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
-    PreReqID: 
-  - BaseNodeGuid: bbaf2a2c-c401-4832-aae6-554ac833e79d
-    PortName: Choice 1
     TargetNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
     PreReqID: 
   - BaseNodeGuid: 653e8d1f-a95a-4d91-ac91-f1700670db87
@@ -117,33 +117,17 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: db3403ef-a027-4592-bea9-bc6e0a0681c8
     PreReqID: 
-  - BaseNodeGuid: db3403ef-a027-4592-bea9-bc6e0a0681c8
-    PortName: Maybe I can help. I'll be back.
-    TargetNodeGuid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
-    PreReqID: 
   - BaseNodeGuid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
     PortName: Choice 1
     TargetNodeGuid: 0341b496-8966-41ec-ad3f-caffeae7e0eb
     PreReqID: 
-  - BaseNodeGuid: 0341b496-8966-41ec-ad3f-caffeae7e0eb
-    PortName: Choice 1
-    TargetNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
-    PreReqID: 
-  - BaseNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
-    PortName: Maybe I can help. I'll be back.
-    TargetNodeGuid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
-    PreReqID: 
-  - BaseNodeGuid: db3403ef-a027-4592-bea9-bc6e0a0681c8
-    PortName: 'PreREQ: Here. I think I have enough money to help you.'
-    TargetNodeGuid: 757d9c8c-07ac-4623-bdcd-e0341151c071
-    PreReqID: 
-  - BaseNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
-    PortName: 'PreREQ: Here. I think I have enough money to help you.'
-    TargetNodeGuid: 757d9c8c-07ac-4623-bdcd-e0341151c071
-    PreReqID: 
   - BaseNodeGuid: 757d9c8c-07ac-4623-bdcd-e0341151c071
     PortName: Choice 1
     TargetNodeGuid: d5caefab-5147-465c-9543-3d379a321c1e
+    PreReqID: 
+  - BaseNodeGuid: 0341b496-8966-41ec-ad3f-caffeae7e0eb
+    PortName: Choice 1
+    TargetNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
     PreReqID: 
   - BaseNodeGuid: d5caefab-5147-465c-9543-3d379a321c1e
     PortName: Choice 1
@@ -157,6 +141,14 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: d1d2e447-5e72-4f1d-a233-dcb917c8b76a
     PreReqID: 
+  - BaseNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
+    PortName: Maybe I can help. I'll be back.
+    TargetNodeGuid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
+    PreReqID: 
+  - BaseNodeGuid: 40f02408-76f4-40ee-b22e-6e745341a195
+    PortName: Here. I think I have enough money to help you. (give 20 shells)
+    TargetNodeGuid: 757d9c8c-07ac-4623-bdcd-e0341151c071
+    PreReqID: check_money_tangle
   - BaseNodeGuid: d1d2e447-5e72-4f1d-a233-dcb917c8b76a
     PortName: Choice 1
     TargetNodeGuid: aa63f885-c082-47b7-b64f-95b639708c6a
@@ -169,163 +161,165 @@ MonoBehaviour:
     PortName: Choice 1
     TargetNodeGuid: aa63f885-c082-47b7-b64f-95b639708c6a
     PreReqID: 
+  - BaseNodeGuid: db3403ef-a027-4592-bea9-bc6e0a0681c8
+    PortName: Maybe I can help. I'll be back.
+    TargetNodeGuid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
+    PreReqID: 
+  - BaseNodeGuid: db3403ef-a027-4592-bea9-bc6e0a0681c8
+    PortName: Here. I think I have enough money to help you. (give 20 shells)
+    TargetNodeGuid: 757d9c8c-07ac-4623-bdcd-e0341151c071
+    PreReqID: check_money_tangle
   DialogueNodeData:
   - Guid: cdef5694-f6ab-4629-ad1e-6661ff89be12
     DialogueText: ...
     eventID: pass
-    Position: {x: 243.33333, y: 187.33333}
+    Position: {x: 243.2, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 9988514d-da50-40a6-92dc-7c8623d8f28c
     DialogueText: ...
     eventID: pass
-    Position: {x: 622, y: 187.33333}
+    Position: {x: 622.4, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: adbee47f-dfd1-4d0f-a537-9b575f41ca22
-    DialogueText: Do you want something or are you just going to keep starring?
+    DialogueText: Do you want something or are you just going to keep staring?
     eventID: pass
-    Position: {x: 975.3333, y: 187.33333}
+    Position: {x: 975.2, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: c6beeb45-a14a-42dc-9c3d-b8650277ff8e
     DialogueText: ...
     eventID: pass
-    Position: {x: 1512, y: 187.33333}
+    Position: {x: 1512, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 75d13460-1ebd-4515-9fa7-0e11b7d165a6
     DialogueText: ...
     eventID: pass
-    Position: {x: 1833.3334, y: 187.33333}
+    Position: {x: 1833.6, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 885f85da-3363-47af-a02f-013506d7e71c
     DialogueText: Alright what do you want? Wait...you're the one trying to stop
       the monster, right?
     eventID: 
-    Position: {x: 2198.6667, y: 187.33333}
+    Position: {x: 2199.2, y: 187.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: c1540ed4-013b-427c-afc9-f95e315fca4a
     DialogueText: Oh, uh...cool? A real hero type you are.
     eventID: pass
-    Position: {x: 2862.6667, y: 262.66666}
+    Position: {x: 2863.2, y: 262.4}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: b71390fe-367b-41e5-b526-20f0377ab90f
     DialogueText: Hm. Do monster slayers happen to also be in the business of helping
       people out?
     eventID: pass
-    Position: {x: 3290.6667, y: 0.66666603}
+    Position: {x: 3291.2, y: 0.79999924}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 2dfd09c5-ce21-49a9-85d8-1f01d56698af
     DialogueText: Hm. Do monster slayers happen to also be in the business of helping
       people out?
     eventID: pass
-    Position: {x: 3290.6667, y: 276}
+    Position: {x: 3291.2, y: 276}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 7ba36dc3-e91b-41d8-b258-65f7462f122b
     DialogueText: You must be a hero or something then...cool.
     eventID: pass
-    Position: {x: 2880, y: 0.66666603}
+    Position: {x: 2880, y: 0.79999924}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: e6325903-718a-4c46-a8ef-ddd2e1f344ff
     DialogueText: I would assume so, but you seem rather...unenthusiastic about the
       task.
     eventID: 
-    Position: {x: 3936.6667, y: 276}
+    Position: {x: 3936.8, y: 276}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 76aa6a50-5bc6-46e9-ada5-453d052a3488
     DialogueText: I would assume so based on your...attitude towards the task at
       hand...
     eventID: 
-    Position: {x: 3936.6667, y: 0.66666603}
+    Position: {x: 3936.8, y: 0.79999924}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 4b37e693-a181-4e52-966a-2bc4e546bb2c
     DialogueText: Hm. How do I put this...
     eventID: pass
-    Position: {x: 4557.3335, y: 170}
+    Position: {x: 4557.6, y: 170.4}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 9d688135-94ef-4c3b-b10c-c9096825ed69
     DialogueText: Yes. And?
     eventID: 
-    Position: {x: 5490, y: -62}
+    Position: {x: 5490.4004, y: -61.6}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: bbaf2a2c-c401-4832-aae6-554ac833e79d
     DialogueText: Ugh, fine.
     eventID: pass
-    Position: {x: 6072, y: 266.66666}
+    Position: {x: 6072, y: 266.4}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 82b5381c-2edf-49fa-b0f5-e26362eafd44
     DialogueText: ...do you have any pocket change you could maybe permanently lend
       to me?
     eventID: 
-    Position: {x: 4896, y: 226}
+    Position: {x: 4896, y: 226.4}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 653e8d1f-a95a-4d91-ac91-f1700670db87
     DialogueText: I'm trying to get enough money for college, but my pockets are
       dry.
     eventID: pass
-    Position: {x: 6422.6665, y: -64.66667}
+    Position: {x: 6423.2, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 9da53984-752b-4065-bb7c-d952465a1997
     DialogueText: I need to go to school. How else am I gonna make it in this world?
       I'll never get a job. There's not much left out there for me to take anyways.
     eventID: pass
-    Position: {x: 6978.6665, y: -64.66667}
+    Position: {x: 6979.2, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 34694f68-c6b5-4d87-9444-c0cc98f81039
-    DialogueText: Hell, even being a monster killer is taken? The job market is crazy!
+    DialogueText: Heck, even being a monster killer is taken? The job market is crazy!
     eventID: pass
-    Position: {x: 7969.3335, y: -64.66667}
-    ChoicePreReqIDs:
-      _serializedList: []
-  - Guid: db3403ef-a027-4592-bea9-bc6e0a0681c8
-    DialogueText: I just need enough to keep me in my classes for the semester.
-    eventID: 
-    Position: {x: 8504, y: -64.66667}
+    Position: {x: 7969.6, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 8b8a5176-9fa5-4943-83a6-527879a2c01a
     DialogueText: Sure you will.
     eventID: end
-    Position: {x: 9108, y: 238.66666}
+    Position: {x: 9108, y: 238.4}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 757d9c8c-07ac-4623-bdcd-e0341151c071
     DialogueText: You're...actually doing this?
-    eventID: pass
-    Position: {x: 9132, y: -64.66667}
+    eventID: pass, tangle_take_money
+    Position: {x: 9132, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 0341b496-8966-41ec-ad3f-caffeae7e0eb
     DialogueText: Oh, you again.
     eventID: pass
-    Position: {x: 9438, y: 431.33334}
+    Position: {x: 9438.4, y: 431.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: d5caefab-5147-465c-9543-3d379a321c1e
     DialogueText: Man, I can't thank you enough.
     eventID: pass
-    Position: {x: 9474.667, y: -64.66667}
+    Position: {x: 9475.2, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 5c9d2ab5-2458-47e9-8446-067639fa9f59
     DialogueText: Hey, I may be paying to go to college, but...
     eventID: pass
-    Position: {x: 9814, y: -64.66667}
+    Position: {x: 9814.4, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 1cfb6078-60bb-450e-8aa9-afb5a0073cef
@@ -333,31 +327,43 @@ MonoBehaviour:
       comes at the expense of more vulnerable population's wellbeing and quality
       of life...
     eventID: pass
-    Position: {x: 10235.333, y: -64.66667}
+    Position: {x: 10235.2, y: -64.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: 40f02408-76f4-40ee-b22e-6e745341a195
-    DialogueText: 'You paying? For my entire future and path of my whole life. Ha... '
+    DialogueText: You paying? For my entire future and path of my whole life. Ha...
+      (20 shells)
     eventID: 
-    Position: {x: 8504, y: 213.33333}
+    Position: {x: 8504, y: 213.6}
     ChoicePreReqIDs:
-      _serializedList: []
+      _serializedList:
+      - Key: Here. I think I have enough money to help you. (give 10 shells)
+        Value: check_money_tangle
   - Guid: d1d2e447-5e72-4f1d-a233-dcb917c8b76a
     DialogueText: ...or something like that. Count me in!
-    eventID: end, reward_badge
-    Position: {x: 11264.667, y: -48.666664}
+    eventID: end, award_badge
+    Position: {x: 11264.8, y: -48.8}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: aa63f885-c082-47b7-b64f-95b639708c6a
     DialogueText: If you ever need help in the fight against corporate greed that
       comes at the expense of...
     eventID: pass
-    Position: {x: 11652, y: -51.333336}
+    Position: {x: 11652, y: -51.2}
     ChoicePreReqIDs:
       _serializedList: []
   - Guid: a07ef229-65b3-4ad2-97eb-fc140c319bac
     DialogueText: ...or whatever I said earlier. Count me in!
     eventID: end
-    Position: {x: 11926.667, y: 140.66667}
+    Position: {x: 11927.2, y: 140.8}
     ChoicePreReqIDs:
       _serializedList: []
+  - Guid: db3403ef-a027-4592-bea9-bc6e0a0681c8
+    DialogueText: I just need enough to keep me in my classes for the semester. 20
+      shells would be enough.
+    eventID: 
+    Position: {x: 8504, y: -64.8}
+    ChoicePreReqIDs:
+      _serializedList:
+      - Key: Here. I think I have enough money to help you. (give 20 shells)
+        Value: check_money_tangle

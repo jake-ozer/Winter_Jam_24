@@ -6,10 +6,13 @@ public class NotificationManager : MonoBehaviour
 {
     public GameObject notifTextObj;
     private bool showing = false;
+    public AudioClip notifSound;
 
     public void ShowNotif(string notifText)
     {
-        if(showing == true)
+        Camera.main.GetComponent<AudioSource>().PlayOneShot(notifSound);
+
+        if (showing == true)
         {
             CancelInvoke();
             ResetNotif();

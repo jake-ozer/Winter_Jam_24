@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using System.Runtime.CompilerServices;
 
 public class PrerequisiteManager : MonoBehaviour
 {
@@ -9,14 +10,22 @@ public class PrerequisiteManager : MonoBehaviour
     private Dictionary<string, Func<bool>> condDictionary;
     private Dictionary<string, bool> hasOccured;
     public bool talkedBriny = false;
+    public bool shelbyPainting = false;
+    public bool brinyForgive = false;
+    public bool talkedPinchy = false;
 
     private void Start()
     {
         condDictionary = new Dictionary<string, Func<bool>>
         {
             { "sponge_letter", HasSpongeLetter },
-            { "talk_briny", CheckTalkBriny },
-            {"shelby_letters", ShelbyLetters }
+            { "check_talk_briny", CheckTalkBriny },
+            {"shelby_letters", ShelbyLetters },
+            {"check_money_tangle", CheckMoneyTangle },
+            {"check_shelby_painting", CheckShelbyPainting },
+            {"check_briny_forgive" , CheckBrinyForgive },
+            {"check_talk_pinchy", CheckTalkPinchy }
+
         };
 
         hasOccured = new Dictionary<string, bool>();
@@ -65,4 +74,25 @@ public class PrerequisiteManager : MonoBehaviour
         return val;
     }
 
+    //checks to see if player has enough money to pay tangle
+    private bool CheckMoneyTangle()
+    {
+        return FindFirstObjectByType<MoneyManager>().GetAmount() >= 20;
+    }
+
+    //checks to see if player has talked to shelby about briny painting her
+    private bool CheckShelbyPainting()
+    {
+        return shelbyPainting;
+    }
+
+    private bool CheckBrinyForgive()
+    {
+        return brinyForgive;
+    }
+
+    private bool CheckTalkPinchy()
+    {
+        return talkedPinchy;
+    }
 }

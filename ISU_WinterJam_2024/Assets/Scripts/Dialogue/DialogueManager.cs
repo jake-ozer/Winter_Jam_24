@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Linq;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
@@ -20,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     private int passEndBufferCount;
     public DynamicDialogueBoxMover ddbm;
+    public AudioSource audioSource;
+    public AudioClip clickSound;
+    public AudioClip startDialogueSound;
 
     private void Start()
     {
@@ -30,6 +32,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueContainer dc, string npcNodeGuid, NPC_Dialogue npc)
     {
+        audioSource.PlayOneShot(startDialogueSound);
         stateManager.ChangeState(StateManager.GameState.dialogue);
         nameText.text = npc.NPC_name;
         curDialogueContainer = dc;
@@ -200,6 +203,8 @@ public class DialogueManager : MonoBehaviour
 
     public void UserPickNextNodeGuid(string guid)
     {
+        audioSource.PlayOneShot(clickSound);
+
         //stop feeding dialogue if it is going
         feedingDialogue = false;
         StopAllCoroutines();
