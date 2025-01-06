@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Twilight Level Gap Filler Top Left Corner_0: -4180022210207376329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
